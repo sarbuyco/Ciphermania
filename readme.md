@@ -10,26 +10,28 @@ If they wish to learn the history of the cipher or how it actually works, they c
 Those are the basics of the website we want to achieve.
 
 Our outline goes like this:
-<ul>
+  
+<ol>
   <li>Home Page</li>
-  <ol>
-    <li>Decoder</li>
-    <ul>
-      <li>For decoding ciphers</li>
-    </ul>
-    <li>Encoder</li>
-    <ul>
-      <li>For encoding messages and encrypting them into ciphers</li>
-    </ul>
+  <ul>
+    <li>For navigation</li>
+  </ul>
+  <li>Decoder</li>
+  <ul>
+    <li>For decoding ciphers</li>
+  </ul>
+  <li>Encoder</li>    
+  <ul>
+    <li>For encoding messages and encrypting them into ciphers</li>
+  </ul>
     <li>Library</li>
-    <ul>
-      <li>Information Encyclopedia</li>
-    </ul>
-  </ol>
-</ul>
+  <ul>
+    <li>Information Encyclopedia about different ciphers</li>
+  </ul>
+</ol>
 You also have easy access to certain points in the library through the section in the side of the homepage, which is demonstrated in our wireframe for this website:
 
 
-wireframe: https://www.canva.com/design/DAGW0ZGpdtY/QyKFWSfhe-tywzNs1QNg0Q/edit?utm_content=DAGW0ZGpdtY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+Wireframe: https://www.canva.com/design/DAGW0ZGpdtY/QyKFWSfhe-tywzNs1QNg0Q/edit?utm_content=DAGW0ZGpdtY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 For the use of JS, we plan to use it for decoding and encoding messages. It will be used when changing the values of the original characters into new characters. It could also be for changing letters into numbers, and substituting letters into other letters, and maybe through the use of special characters. It really depends on the cipher being used and what it needs to produce.
