@@ -9,4 +9,25 @@ In here, there will be multiple options for the user to use to decode ciphers, o
 If they wish to learn the history of the cipher or how it actually works, they can use the library, and look for the code they want to know about. 
 Those are the basics of the website we want to achieve.
 
+Our outline goes like this:
+<ul>
+  <li>Home Page</li>
+  <ol>
+    <li>Decoder</li>
+    <ul>
+      <li>For decoding ciphers</li>
+    </ul>
+    <li>Encoder</li>
+    <ul>
+      <li>For encoding messages and encrypting them into ciphers</li>
+    </ul>
+    <li>Library</li>
+    <ul>
+      <li>Information Encyclopedia</li>
+    </ul>
+  </ol>
+</ul>
+You also have easy access to certain points in the library through the section in the side of the homepage, which is demonstrated in our wireframe for this website:
+
+
 wireframe: https://www.canva.com/design/DAGW0ZGpdtY/QyKFWSfhe-tywzNs1QNg0Q/edit?utm_content=DAGW0ZGpdtY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
