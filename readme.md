@@ -31,3 +31,5 @@ You also have easy access to certain points in the library through the section i
 
 
 wireframe: https://www.canva.com/design/DAGW0ZGpdtY/QyKFWSfhe-tywzNs1QNg0Q/edit?utm_content=DAGW0ZGpdtY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+For the use of JS, we plan to use it for decoding and encoding messages. It will be used when changing the values of the original characters into new characters. It could also be for changing letters into numbers, and substituting letters into other letters, and maybe through the use of special characters. It really depends on the cipher being used and what it needs to produce.
