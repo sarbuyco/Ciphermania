@@ -214,3 +214,16 @@ section{
   width: 50%; 
   float: left;
 }
+
+.logo {
+    display: flex;
+    width: calc(100% - 30px);
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    margin: 15px;
+}
+.logo img{
+width:100px;
+height:50px;
+float: right;
+}
