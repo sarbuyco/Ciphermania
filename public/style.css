@@ -200,3 +200,17 @@ label {
 h2 {
   color: var(--color-text-header);
 }
+section{
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  overflow:hidden;
+}
+.align{
+  width: 50%;
+  float: left;
+}
+.align section{
+  width: 50%; 
+  float: left;
+}
