@@ -200,6 +200,11 @@ label {
 h2 {
   color: var(--color-text-header);
 }
+
+div{
+  width: 100%;
+}
+
 section{
   border-style: solid;
   border-width: 1px;
@@ -208,8 +213,12 @@ section{
 .align{
   float: left;
 }
-.align section{
-  width: 50%; 
+#library {
+  width: 20%; 
+  float: left;
+}
+#nav{
+  width: 80%;
   float: left;
 }
 
