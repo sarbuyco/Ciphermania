@@ -227,6 +227,16 @@ section{
   float: right;
 }
 
+#codeselect{
+  width: 10%; 
+  height: 480px;
+  float: left;
+}
+
+#input{
+  float: center;
+}
+
 hr{
   border: 1px solid black;
 }
