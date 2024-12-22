@@ -292,7 +292,11 @@ border: 1px solid black;
   height: 100%
 }
 
-.withinsets {
+.Ciheaders {
 margin: 5px
+}
+
+#Caesar, #Morse, #BaseSixtyFour, #Keyword, #Vigenere, #Integer, #RailFence, #Affine, #Bacon, #SMS {
+  margin: 5px;
 }
 
