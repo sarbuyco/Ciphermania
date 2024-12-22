@@ -205,7 +205,7 @@ div{
   width: 100%;
 }
 
-section{
+section, .encodeoutput, .decodeoutput{
   border-style: solid;
   border-width: 1px;
   border-color: black;
@@ -235,13 +235,13 @@ section{
   float: right;
 }
 
-#codeselect{
+.codeselect{
   width: 10%; 
   height: 480px;
   float: left;
 }
 
-#input{
+.inputOutput{
   float: left;
 }
 

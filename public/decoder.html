@@ -17,7 +17,7 @@
       <img src="" alt="logo" align="right">
     </div>
     <div class="decoder">
-      <section id="codeselect">
+      <section class="codeselect">
       <form>
         <select name="codes" id="codes">
           <option value="morse">Morse</option>                              
@@ -25,16 +25,19 @@
         <input type="submit">
       </form>
       </section>
-      <article id="input"> 
+      <article class="inputOutput"> 
         <label>
-          Select cipher then type code here (Seperate each letter equivalent by a space): <input type="text" id="decodeinput" />
+          Select cipher then type code here (Separate each letter equivalent with a space): <input type="text" id="decodeinput" />
         </label>
         <button onclick="insert output js function"> Decode </button>
+        <br/>
+        <h2>Output</h2>
+        <p id="decodeoutput"> </p>
       </article>
       <section class="sidenav">
         <a href="index.html"><img src="" alt="home"></a>
         <br/>
-        <a href="encoder.html"><img src="" alt="encoder"></a>
+        <a href="decoder.html"><img src="" alt="decoder"></a>
         <br/>
         <a href="library.html"><img src="" alt="library"></a>
       </section>
