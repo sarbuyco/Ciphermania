@@ -249,6 +249,20 @@ hr{
   border: 1px solid black;
 }
 
+#footer{
+  font-size: 12px;
+}
+
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ebe6ff;
+  color: black;
+  text-align: left;
+}
+
 .center {
   display: block;
   margin-left: auto;
