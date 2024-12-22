@@ -256,12 +256,6 @@ hr{
   width: 60%;
 }
 
-.sidenav{
-  width: 10%;
-  height: 310px;
-  float: right;
-}
-
 .logo {
     display: flex;
     width: calc(100% - 30px);
@@ -276,7 +270,7 @@ float: right;
 }
 
 #Settings {
-  float: left;
+  float: right;
   border: 1px solid black;
   width: 10%
 }
