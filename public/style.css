@@ -214,12 +214,17 @@ section{
   float: left;
 }
 #library {
-  width: 20%; 
+  width: 18%; 
+  height: 480px;
   float: left;
 }
 #nav{
-  width: 80%;
-  float: left;
+  width: 78%;
+  height: 480px;
+  float: right;
+}
+hr{
+  border: 1px solid black;
 }
 
 .logo {
@@ -233,4 +238,12 @@ section{
 width:100px;
 height:50px;
 float: right;
+}
+
+#Sets {
+border: 1px solid black;
+}
+
+.withinsets {
+margin: 5px
 }
