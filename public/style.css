@@ -211,6 +211,14 @@ section{
   border-color: black;
 }
 
+.decoder{
+  float: left;
+}
+
+.encoder{
+  float: left;
+}
+
 .align{
   float: left;
 }
@@ -234,14 +242,14 @@ section{
 }
 
 #input{
-  float: center;
+  float: left;
 }
 
 hr{
   border: 1px solid black;
 }
 
-#sidenav{
+.sidenav{
   width: 15%;
   height: 480px;
   float: right;

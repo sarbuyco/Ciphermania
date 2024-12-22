@@ -16,12 +16,28 @@
       </h1></header>
     <img src="" alt="logo" align="right">
     </div>
-    <section id="sidenav">
-    <a href="index.html"><img src="" alt="home"></a>
-      <br/>
-    <a href="decoder.html"><img src="" alt="decoder"></a>
-      <br/>
-    <a href="library.html"><img src="" alt="library"></a>
-    </section>
+    <div class="encoder">
+      <section id="codeselect">
+      <form>
+        <select name="codes" id="codes">
+          <option value="morse">Morse</option>                              
+        </select>
+        <input type="submit">
+      </form>
+      </section>
+      <article id="input"> 
+        <label>
+          Select cipher then type message here (Separate each letter with a space): <input type="text" id="encodeinput" />
+        </label>
+        <button onclick="insert output js function"> Encode </button>
+      </article>
+      <section class="sidenav">
+        <a href="index.html"><img src="" alt="home"></a>
+        <br/>
+        <a href="decoder.html"><img src="" alt="decoder"></a>
+        <br/>
+        <a href="library.html"><img src="" alt="library"></a>
+      </section>
+    </div>
   </body>
 </html>
