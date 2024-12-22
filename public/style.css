@@ -249,9 +249,16 @@ hr{
   border: 1px solid black;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
 .sidenav{
-  width: 15%;
-  height: 480px;
+  width: 10%;
+  height: 400px;
   float: right;
 }
 
