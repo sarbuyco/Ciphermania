@@ -292,11 +292,15 @@ border: 1px solid black;
   height: 100%
 }
 
+#Caesar, #Morse, #BaseSixFour, #Keyword, #Vigenere, #Integer, #RailFence, #Affine, #Bacon, #SMS {
+  margin: 5px;
+}
+
 .Ciheaders {
 margin: 5px
 }
 
-#Caesar, #Morse, #BaseSixtyFour, #Keyword, #Vigenere, #Integer, #RailFence, #Affine, #Bacon, #SMS {
-  margin: 5px;
+.Citext {
+margin: 20px;
 }
 
