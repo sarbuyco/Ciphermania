@@ -281,6 +281,10 @@ float: right;
   width: 10%
 }
 
+.Setting img {
+  padding: 10px;
+}
+
 #Sets {
 border: 1px solid black;
   float:left;
@@ -291,3 +295,4 @@ border: 1px solid black;
 .withinsets {
 margin: 5px
 }
+
