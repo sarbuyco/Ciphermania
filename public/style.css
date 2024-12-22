@@ -210,21 +210,31 @@ section{
   border-width: 1px;
   border-color: black;
 }
+
 .align{
   float: left;
 }
+
 #library {
   width: 19%; 
   height: 480px;
   float: left;
 }
+
 #nav{
   width: 80%;
   height: 480px;
   float: right;
 }
+
 hr{
   border: 1px solid black;
+}
+
+#sidenav{
+  width: 15%;
+  height: 480px;
+  float: right;
 }
 
 .logo {
