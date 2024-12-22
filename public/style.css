@@ -204,10 +204,8 @@ section{
   border-style: solid;
   border-width: 1px;
   border-color: black;
-  overflow:hidden;
 }
 .align{
-  width: 50%;
   float: left;
 }
 .align section{
