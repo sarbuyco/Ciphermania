@@ -214,12 +214,12 @@ section{
   float: left;
 }
 #library {
-  width: 18%; 
+  width: 19%; 
   height: 480px;
   float: left;
 }
 #nav{
-  width: 78%;
+  width: 79%;
   height: 480px;
   float: right;
 }
@@ -240,8 +240,17 @@ height:50px;
 float: right;
 }
 
+#Settings {
+  float: left;
+  border: 1px solid black;
+  width: 10%
+}
+
 #Sets {
 border: 1px solid black;
+  float:left;
+  width: 90%;
+  height: 100%
 }
 
 .withinsets {
