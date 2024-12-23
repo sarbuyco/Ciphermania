@@ -17,19 +17,23 @@
       href="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/logo.png?v=1734960726321"
     />
     <script>
-      //Beta only includes Encode Caesar Function
+      //Beta only includes Encode Caesar Function for now
       function CaesarEncode() {
+        //Get the values of the input and the shift key
         var text = document.getElementById("encodeinput").value + "";
         var key = document.getElementById("encodekeyinput").value;
+        //testing if it works
         console.log(text);
         console.log(key);
+        //Shift key can go negative. This is to make sure it is equal to the normal positive shift key
         key = key * -1;
         if (key * -1 > 0) {
           key = 26 - key;
         }
+        //splitting the characters into an array
         const arr = text.split("");
         console.log(arr);
-
+        //defining the alphabet that the input array will be compared to
         var loweralphabet = [
           "a",
           "b",
@@ -86,7 +90,10 @@
           "Y",
           "Z",
         ];
+        
+        //bool variable to check if the character is a letter or special character
         var check = false;
+        //
         var strtext = "";
 
         for (var i = 0; i < arr.length; i++) {
@@ -117,7 +124,7 @@
   </head>
   <body>
     <div class="logo">
-      <header><h1 align="left">Encoder</h1></header>
+      <header><h1 align="left">Ciphermania - Encoder</h1></header>
       <img
         src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/logo.png?v=1734960726321"
         alt="logo"
@@ -284,7 +291,7 @@
         </section>
       </article>
     </div>
-    <div class="clear"></div>
+    <div class="clear"><!--for css purposes, to ensure the footer doesn't cover the content--></div>
     <footer>
       <p id="footer">
         Copyright &copy; 2024 WDProjCesiumBuycoCruz
