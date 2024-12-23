@@ -11,7 +11,7 @@ const path = require('path');
 const app = express();
 
 //Serves static files inside the public folder
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname + '/public')));
 app.set('view engine', 'hbs');
 app.use(bodyParser.urlencoded({ extended: true }));
 
