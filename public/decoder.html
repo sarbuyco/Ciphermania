@@ -16,6 +16,7 @@
       type="image/x-icon"
       href="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/logo.png?v=1734960726321"
     />
+    
     <script src="server.js"></script>
   </head>
   <body>
@@ -30,6 +31,9 @@
     </div>
     <div class="decoder">
       <section class="codeselect">
+        <!--buttons to select type of cipher, which determines the javascript
+        solution needed to encrypt the message-->
+        <!--none are currently available. javascript is implemented in encoder-->
         <button
           onclick="cipherselect(11)"
           name="cipher"
@@ -122,6 +126,8 @@
         </button>
       </section>
       <article class="inputOutput">
+        <!--explanations of encoding's purpose, process, and function, as well
+        as how to use the webpage's encoder tool-->
         <p>
           Decoding is the process of interpreting the encrypted message using an
           understanding/key of the cipher used. This essential step is done by
@@ -137,6 +143,7 @@
           Caesar Cipher, type the Caesar shift (defined in the library) into the
           second input field.
         </p>
+        <!--current simple js implementation draft is in the encoder-->
         <label>
           Select cipher then type code here:<input
             type="text"
@@ -154,6 +161,7 @@
         <p id="decodeoutput"></p>
       </article>
       <article id="Settings">
+        <!--quick navigation links to all other webpages-->
         <section class="Setting">
           <a href="index.html"
             ><img
