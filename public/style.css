@@ -134,7 +134,7 @@ section, .encodeoutput, .decodeoutput{
 
 .codeselect{
   width: 12%; 
-  height: 420px;
+  height: 440px;
   float: left;
   background-color: #f8ed65;
   border-radius: 9px;
@@ -144,6 +144,7 @@ section, .encodeoutput, .decodeoutput{
   float: left;
   border: 1px solid black;
   margin: 5px;
+  width: 75%;
 }
 
 hr{
