@@ -128,14 +128,14 @@
       <article class="inputOutput">
         <!--explanations of encoding's purpose, process, and function, as well
         as how to use the webpage's encoder tool-->
-        <p>
+        <p class="marginfix">
           Decoding is the process of interpreting the encrypted message using an
           understanding/key of the cipher used. This essential step is done by
           the recipient, who can now privately translate the message for their
           understanding, finishing the process of privately communicating a
           message.
         </p>
-        <p>
+        <p class="marginfix">
           Use the decoder below by first selecting the type of cipher, then
           inputting the message you want to decrypt in the first input field.
           Then, based on the type of cipher, input any correct key that is
@@ -144,21 +144,21 @@
           second input field.
         </p>
         <!--current simple js implementation draft is in the encoder-->
-        <label>
+        <label class="marginfix">
           Select cipher then type code here:<input
             type="text"
             id="decodeinput"
           />
         </label>
         <br />
-        <label>
+        <label class="marginfix">
           Input necessary key: <input type="text" id="decodekeyinput" />
         </label>
         <br />
         <button onclick="Coder()" class="button">Decode</button>
         <br />
-        <h2>Output</h2>
-        <p id="decodeoutput"></p>
+        <h2 class="marginfix">Output</h2>
+        <p class="marginfix" id="decodeoutput"></p>
       </article>
       <article id="Settings">
         <!--quick navigation links to all other webpages-->
