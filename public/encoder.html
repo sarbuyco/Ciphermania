@@ -9,14 +9,13 @@
     <meta name="revised" content="12/23/2024" />
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script>function CaesarEncode() {
-  var code = document.getElementById("encodeinput");
+  var code = document.getElementById("encodeinput")+ '';
   var key = document.getElementById("encodekeyinput").value;
   console.log(code);
   console.log(key);
   if (key < 0) {
     key = 26 + key;
   }
-  console.log(code)
   const arr = code.split("");
   
   var loweralphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 
