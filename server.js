@@ -41,5 +41,44 @@ function coder(cipherinput) {
 }
 
 function CaesarEncode() {
+  var code = document.getElementById("encodeinput");
+  var key = document.getElementById("encodekeyinput").value;
   
+  if (key > 0) {
+    key = key;
+  }
+  else {
+    key = 26 + key
+  }
+  console.log(code)
+  const arr = code.split("");
+  
+  var loweralphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 
+                  'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+  var upperalphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 
+                  'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+  var check = false;
+  var strcode = "";
+  
+  for (var i = 0; i < arr.length; i++) {
+    check = false;
+    for (var j = 0; j < upperalphabet.length; j++) {
+      if (arr[i] == upperalphabet[j]) {
+      strcode = strcode + upperalphabet[(j+key) % 26]
+      check = true;
+      }
+    }
+    if (check == false) {
+      for (var j = 0; j < loweralphabet.length; j++) {
+      if (arr[i] == loweralphabet[j]) {
+      strcode = strcode + loweralphabet[(j+key) % 26]
+      check = true;
+      }
+    }
+    }
+    
+    if (check == false) {
+      strcode = strcode + arr[i]
+    }
+  }
 }
