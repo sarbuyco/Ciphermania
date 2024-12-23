@@ -13,6 +13,7 @@
   var key = document.getElementById("encodekeyinput").value;
   console.log(text);
   console.log(key);
+  key = key * -1;
   if (key * -1 > 0) {
     key = 26 - key;
   }
