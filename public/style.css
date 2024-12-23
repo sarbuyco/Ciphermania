@@ -145,6 +145,16 @@ footer{
   width: 100%;
   color: white;
   text-align: left;
+  height: 120px;
+}
+
+.push{
+  height: 120px;
+}
+
+main{
+  min-height: 100vw;
+  margin-bottom: 120px;
 }
 
 #footer{
