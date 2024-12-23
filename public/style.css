@@ -73,10 +73,13 @@ button:hover{
   background-color: black;
   color: yellow;
 }
-
+.select {
+  margin-left: 10px;
+}
 .button{
   transition-duration: 0.4s;
   cursor: pointer;
+  margin-left: 10px;
 }
 
 label {
@@ -119,7 +122,7 @@ section, .encodeoutput, .decodeoutput{
 
 #library {
   width: 19%; 
-  height: 595px;
+  height: 650px;
   float: left;
 }
 

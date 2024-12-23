@@ -1,70 +1,193 @@
 <html>
   <head>
     <title>Decoder</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <meta name="keywords" content="decoder, cipher, code" />
-    <meta name="description" content="Page to decipher codes and interpret messages, with buttons linked to the other webpages." />
+    <meta
+      name="description"
+      content="Page to decipher codes and interpret messages, with buttons linked to the other webpages."
+    />
     <meta name="author" content="Sophia Buyco, Mikaela Cruz" />
     <meta name="revised" content="12/23/2024" />
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/logo.png?v=1734960726321">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/logo.png?v=1734960726321"
+    />
     <script src="server.js"></script>
   </head>
   <body>
     <div class="logo">
-        <header><h1 align="left">
-        Decoder
-        </h1></header>
-      <img src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/logo.png?v=1734960726321" alt="logo" align="right" id="logo">
+      <header><h1 align="left">Decoder</h1></header>
+      <img
+        src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/logo.png?v=1734960726321"
+        alt="logo"
+        align="right"
+        id="logo"
+      />
     </div>
     <div class="decoder">
       <section class="codeselect">
-          <button onclick="cipherselect(11)" name="cipher" type="text" value="caesar" class="button">Caesar</button>
-          <button onclick="cipherselect(12)" name="cipher" type="text" value="morse" class="button">Morse</button>    
-          <button onclick="cipherselect(13)" name="cipher" type="text" value="basesixfour" class="button">Base64</button>
-          <button onclick="cipherselect(14)" name="cipher" type="text" value="keyword" class="button">Keyword</button>   
-          <button onclick="cipherselect(15)" name="cipher" type="text" value="vigenere" class="button">Vigenere</button>
-          <button onclick="cipherselect(16)" name="cipher" type="text" value="integer" class="button">A1Z26</button>   
-          <button onclick="cipherselect(17)" name="cipher" type="text" value="railfence" class="button">Rail Fence</button>
-          <button onclick="cipherselect(18)" name="cipher" type="text" value="affine" class="button">Affine</button>   
-          <button onclick="cipherselect(19)" name="cipher" type="text" value="bacon" class="button">Bacon</button>
-          <button onclick="cipherselect(20)" name="cipher" type="text" value="sms" class="button">Multitap Phone SMS</button>
+        <button
+          onclick="cipherselect(11)"
+          name="cipher"
+          type="text"
+          value="caesar"
+          class="button"
+        >
+          Caesar
+        </button>
+        <button
+          onclick="cipherselect(12)"
+          name="cipher"
+          type="text"
+          value="morse"
+          class="button"
+        >
+          Morse
+        </button>
+        <button
+          onclick="cipherselect(13)"
+          name="cipher"
+          type="text"
+          value="basesixfour"
+          class="button"
+        >
+          Base64
+        </button>
+        <button
+          onclick="cipherselect(14)"
+          name="cipher"
+          type="text"
+          value="keyword"
+          class="button"
+        >
+          Keyword
+        </button>
+        <button
+          onclick="cipherselect(15)"
+          name="cipher"
+          type="text"
+          value="vigenere"
+          class="button"
+        >
+          Vigenere
+        </button>
+        <button
+          onclick="cipherselect(16)"
+          name="cipher"
+          type="text"
+          value="integer"
+          class="button"
+        >
+          A1Z26
+        </button>
+        <button
+          onclick="cipherselect(17)"
+          name="cipher"
+          type="text"
+          value="railfence"
+          class="button"
+        >
+          Rail Fence
+        </button>
+        <button
+          onclick="cipherselect(18)"
+          name="cipher"
+          type="text"
+          value="affine"
+          class="button"
+        >
+          Affine
+        </button>
+        <button
+          onclick="cipherselect(19)"
+          name="cipher"
+          type="text"
+          value="bacon"
+          class="button"
+        >
+          Bacon
+        </button>
+        <button
+          onclick="cipherselect(20)"
+          name="cipher"
+          type="text"
+          value="sms"
+          class="button"
+        >
+          Multitap Phone SMS
+        </button>
       </section>
       <article class="inputOutput">
         <p>
-          Decoding is the process of interpreting the encrypted message using an understanding/key of the cipher used.
-           This essential step is done by the recipient, who can now privately translate the message for their understanding, finishing the process of privately communicating a message.
+          Decoding is the process of interpreting the encrypted message using an
+          understanding/key of the cipher used. This essential step is done by
+          the recipient, who can now privately translate the message for their
+          understanding, finishing the process of privately communicating a
+          message.
         </p>
         <p>
-          Use the decoder below by first selecting the type of cipher, then inputting the message you want to decrypt in the first input field.
-           Then, based on the type of cipher, input any correct key that is required to encode your message.
-           For example, if you are using the Caesar Cipher, type the Caesar shift (defined in the library) into the second input field.
+          Use the decoder below by first selecting the type of cipher, then
+          inputting the message you want to decrypt in the first input field.
+          Then, based on the type of cipher, input any correct key that is
+          required to encode your message. For example, if you are using the
+          Caesar Cipher, type the Caesar shift (defined in the library) into the
+          second input field.
         </p>
         <label>
-          Select cipher then type code here:<input type="text" id="decodeinput" />
+          Select cipher then type code here:<input
+            type="text"
+            id="decodeinput"
+          />
         </label>
-        <br/>
+        <br />
         <label>
-          Input necessary key: <input type="text" id="decodekeyinput"/>
+          Input necessary key: <input type="text" id="decodekeyinput" />
         </label>
-        <br/>
-        <button onclick="Coder()" class="button"> Decode </button>
-        <br/>
+        <br />
+        <button onclick="Coder()" class="button">Decode</button>
+        <br />
         <h2>Output</h2>
-        <p id="decodeoutput"> </p>
+        <p id="decodeoutput"></p>
       </article>
       <article id="Settings">
-      <section class="Setting">
-        <a href="index.html"><img src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/home.png?v=1734891003623" alt="home" width="80" height="80" class="center"></a><figcaption>Home</figcaption>
-      </section>
-      <section class="Setting">
-        <a href="encoder.html"><img src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/secured-lock.png?v=1734890993732" alt="encoder" width="80" height="80" class="center"></a><figcaption>Encoder</figcaption>
-      </section>
-      <section class="Setting">
-        <a href="library.html"><img src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/library.png?v=1734890999960" alt="library" width="80" height="80" class="center"></a><figcaption>Library</figcaption>
-      </section>
-    </article>
+        <section class="Setting">
+          <a href="index.html"
+            ><img
+              src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/home.png?v=1734891003623"
+              alt="home"
+              width="80"
+              height="80"
+              class="center"
+          /></a>
+          <figcaption>Home</figcaption>
+        </section>
+        <section class="Setting">
+          <a href="encoder.html"
+            ><img
+              src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/secured-lock.png?v=1734890993732"
+              alt="encoder"
+              width="80"
+              height="80"
+              class="center"
+          /></a>
+          <figcaption>Encoder</figcaption>
+        </section>
+        <section class="Setting">
+          <a href="library.html"
+            ><img
+              src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/library.png?v=1734890999960"
+              alt="library"
+              width="80"
+              height="80"
+              class="center"
+          /></a>
+          <figcaption>Library</figcaption>
+        </section>
+      </article>
     </div>
     <div class="clear"></div>
     <footer>
@@ -76,8 +199,8 @@
         Base64 - MDN Web Docs Glossary: Definitions of Web-related terms | MDN.
         (2024, November 4). MDN Web Docs.
         https://developer.mozilla.org/en-US/docs/Glossary/Base64#
-        <br/>
-        dCode. (n.d.). Phone keypad cipher. 
+        <br />
+        dCode. (n.d.). Phone keypad cipher.
         https://www.dcode.fr/phone-keypad-cipher
         <br />
         Life, S. (2024, July 11). Learn Morse code with this Morse translator
@@ -88,6 +211,9 @@
         Community.
         https://dev.to/cognivibes/understanding-the-vigenere-cipher-16g5
         <br />
+        Rembert, L. (2021, August 11). Baconian Cipher. Privacy Canada.
+        https://privacycanada.net/baconian-cipher/
+        <br />
         Freepik. (n.d.-a). Home free icon. Flaticon.
         https://www.flaticon.com/free-icon/home_1946436
         <br />
@@ -96,8 +222,9 @@
         <br />
         Gandy, D. (n.d.). Padlock Unlock free icon. Flaticon.
         https://www.flaticon.com/free-icon/padlock-unlock_25215
-        <br/>
-        GeeksforGeeks. (2023, March 7). Implementation of Affine Cipher. GeeksforGeeks. 
+        <br />
+        GeeksforGeeks. (2023, March 7). Implementation of Affine Cipher.
+        GeeksforGeeks.
         https://www.geeksforgeeks.org/implementation-affine-cipher/
         <br />
         inkubators. (n.d.). Library free icon. Flaticon.
