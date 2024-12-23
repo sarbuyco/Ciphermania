@@ -159,6 +159,7 @@ footer{
   color: white;
   text-align: left;
   height: 120px;
+  overflow: scroll;
 }
 
 .clear { clear: both; height: 150px; }
