@@ -9,45 +9,45 @@
     <meta name="revised" content="12/23/2024" />
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script>function CaesarEncode() {
-  var code = document.getElementById("encodeinput")+ '';
+  var text = document.getElementById("encodeinput").value + '';
   var key = document.getElementById("encodekeyinput").value;
-  console.log(code);
+  console.log(text);
   console.log(key);
   if (key < 0) {
     key = 26 + key;
   }
-  const arr = code.split("");
+  const arr = text.split("");
   
   var loweralphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 
                   'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
   var upperalphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 
                   'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
   var check = false;
-  var strcode = "";
+  var strtext = "";
   
   for (var i = 0; i < arr.length; i++) {
     check = false;
     for (var j = 0; j < upperalphabet.length; j++) {
       if (arr[i] == upperalphabet[j]) {
-      strcode = strcode + upperalphabet[(j+key) % 26]
+      strtext = strtext + upperalphabet[(j+key) % 26]
       check = true;
       }
     }
     if (check == false) {
       for (var j = 0; j < loweralphabet.length; j++) {
       if (arr[i] == loweralphabet[j]) {
-      strcode = strcode + loweralphabet[(j+key) % 26]
+      strtext = strtext + loweralphabet[(j+key) % 26]
       check = true;
       }
     }
     }
     
     if (check == false) {
-      strcode = strcode + arr[i]
+      strtext = strtext + arr[i]
     }
   }
-  console.log(strcode);
-  document.getElementById("encodeoutput").innerHTML = strcode;
+  console.log(strtext);
+  document.getElementById("encodeoutput").innerHTML = strtext;
 }</script>
   </head>
   <body>
