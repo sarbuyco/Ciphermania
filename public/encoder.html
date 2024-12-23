@@ -13,8 +13,8 @@
   var key = document.getElementById("encodekeyinput").value;
   console.log(text);
   console.log(key);
-  if (key < 0) {
-    key = 26 + key;
+  if (key * -1 > 0) {
+    key = 26 - key;
   }
   const arr = text.split("");
   console.log(arr);
@@ -30,21 +30,21 @@
     check = false;
     for (var j = 0; j < upperalphabet.length; j = j + 1) {
       if (arr[i] == upperalphabet[j]) {
-      strtext = strtext + upperalphabet[(j+key) % 26]
+      strtext = strtext + upperalphabet[(j+key) % 26];
       check = true;
       }
     }
     if (check == false) {
       for (var j = 0; j < loweralphabet.length; j = j + 1) {
       if (arr[i] == loweralphabet[j]) {
-      strtext = strtext + loweralphabet[(j+key) % 26]
+      strtext = strtext + loweralphabet[(j+key) % 26];
       check = true;
       }
     }
     }
     
     if (check == false) {
-      strtext = strtext + arr[i]
+      strtext = strtext + arr[i];
     }
   }
   console.log(strtext);
@@ -80,7 +80,7 @@
           Input necessary key: <input type="string" id="encodekeyinput"/>
         </label>
         <br/>
-        <button onclick="CaesarEncode()"> Encode </button>
+        <button onclick="CaesarEncode()" class="button"> Encode </button>
         <h2>Output</h2>
         <p id="encodeoutput"> </p>
       </article>
