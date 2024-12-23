@@ -2,147 +2,250 @@
 <html>
   <head>
     <title>Library</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <meta name="keywords" content="homepage, navigation" />
-    <meta name="description" content="Page with collection of ciphers and their meanings, with buttons linked to the other webpages." />
+    <meta
+      name="description"
+      content="Page with collection of ciphers and their meanings, with buttons linked to the other webpages."
+    />
     <meta name="author" content="Sophia Buyco, Mikaela Cruz" />
     <meta name="revised" content="12/23/2024" />
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/favicon.png?v=1734958400365">
   </head>
   <body>
     <main>
-    <div class="logo">
-     <header><h1 align="left">
-      Library
-      </h1></header>
-    <img src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/favicon.png?v=1734958400365" alt="logo" align="right" id="logo">
-    </div>
-    <hr>
-    <p>
-      A webpage showcasing the possible ciphers on this website. It gives the user a basic description of the cipher, and teaches them how they can decipher the code on their own. Here, people can browse and learn about the different kinds of ciphers that have been made possible to the world today.
-    </p>
-    <div class="Ciphers">
-    <article id="Sets">
-      <section id="Caesar">
-        <h2 class="Ciheaders">Caesar Cipher</h2>
-        <p class="Citext">
-          A simple and classic way to encode messages. Caesar Cipher is a substitution cipher, meaning that the original letter will be replaced by another letter or symbol. Caesar involves shifting letters based on a certain key (a user input) and the shifted letter will be the original letter's encryptment. The most typical key for Caesar is 3.
-          <br><br>
-          Method:
-          <br>
-          Let's say that the inputted text to decode was "Bill," and the shift key is 3. This means that A=D, B=E, C=F.
-          <br>
-          Encoded message:
-          <br>
-          Eloo
-        </p>
-      </section>
-      <section id="Morse">
-        <h2 class="Ciheaders">Morse Code</h2>
-        <p class="Citext">
-          A famous Cipher known for its dots and dashes. This can be used in any form, whether it be the flashing of light, the beeping of doors, steps, winks, hands, etc. It is a simple substitution cipher than can use 1-6 characters for just one original character, and each character/letter is a different, unique combination of dots and dashes/underscores, with slashes acting as a space. This, however, does not include lowercase letters, and all messages are decoded into uppercase.<br><br>
-          Method:
-          <br>
-          There is only one set of combinations for this cipher, meaning that it can be memorized, or referenced in a book or the internet. Let's say that we have the phrase, "I like triangles," and encode it into morse code.
-          <br>
-          Encoded message:
-          <br>
-          .. / .-.. .. -.- . / - .-. .. .- -. --. .-.. . ...
-          <br><br>
-          Below here is a simple image featuring most characters and their respective combinations:
-          <br>
-          <figure>
-          <img src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/IMG_4890.png?v=1734955669142" alt="Morse Code Keys" width="325px" height="200px">
-          <figcaption>Figure 1. An image featuring the different characters and their respective morse code combinations.</figcaption>
-          </figure>
-        </p>
-      </section>
-      <section id="BaseSixFour">
-        <h2 class="Ciheaders">Base64</h2>
-        <p class="Citext">
-          A binary to text encoding scheme, Base64 is used for storage and transfer for media related or only useable with ASCII text. It ensures that data will be transported without modification. Based on the ASCII format, the numbers corresponding to the letter will be turned into an 8-bit binary value, which will then be split into 6-bit values, and following the base64 key, the numbers that equal to the value of the 6-bit will be used as the guide for finding out which letter will be used in encoding the input.
-        </p>
-      </section>
-      <section id="Keyword">
-        <h2 class="Ciheaders">Keyword Cipher</h2>
-        <p class="Citext">
-          Another simple substitution cipher, but this time involves the user thinking of a keyword. This keyword will then be placed in the front of the new substituted letters, and the letters that go after that will follow their basic alphabetical order. This does not have the use of lowercase letters. If there are duplicate letters in the word (i.e. BILLY), then the duplicate is removed (will be BILY).
-          <br>
-          An example of the cipher is this: imagine our keyword is PARTY. This will then correspond to this:
-          <br>
-          <figure>
-            <img src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/IMG_4891.jpeg?v=1734958066250" alt="Board of Keyword Cipher: PARTY" width="400px" height="100px">
-            <figcaption>Figure 2. A picture featuring what the cipher substitute looks like when the keyword is PARTY.</figcaption>
-          </figure>
-        </p>
-      </section>
-      <section id="Vigenere">
-        <h2 class="Ciheaders">Vigenere Cipher</h2>
-        <p class="Citext">
-          A slightly trickier substitution cipher that also involves a keyword. This is shown through a square where each column and row has a letter represented to them, and the letter is the first to be seen in the column/row. It still follows the alphabetical order, and the message will be encrypted by the column, and the keyword by the row. The intersection of column and row will be the substituted 
-        </p>
-      </section>
-      <section id="Integer">
-        <h2 class="Ciheaders">A1Z26</h2>
-        <p class="Citext">
-          [Insert paragraph here]
-        </p>
-      </section>
-      <section id="RailFence">
-        <h2 class="Ciheaders">Rail Fence Cipher</h2>
-        <p class="Citext">
-          [Insert paragraph here]
-        </p>
-      </section>
-      <section id="Affine">
-        <h2 class="Ciheaders">Affine Cipher</h2>
-        <p class="Citext">
-          [Insert paragraph here]
-        </p>
-      </section>
-      <section id="Bacon">
-        <h2 class="Ciheaders">Bacon Cipher</h2>
-        <p class="Citext">
-          [Insert paragraph here]
-        </p>
-      </section>
-      <section id="SMS">
-        <h2 class="Ciheaders">Multitap Phone SMS</h2>
-        <p class="Citext">
-          [Insert paragraph here]
-        </p>
-      </section>
-    </article>
-    <article id="Settings">
-      <section class="Setting">
-      <a href="index.html"><img src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/home.png?v=1734891003623" alt="home" width="80" height="80" class="center"></a><figcaption>Home</figcaption>
-      </section>
-      <section class="Setting">
-      <a href="decoder.html"><img src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/padlock-unlock.png?v=1734890976203" alt="decoder" width="80" height="80" class="center"></a><figcaption>Decoder</figcaption>
-      </section>
-      <section class="Setting">
-        <a href="encoder.html"><img src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/secured-lock.png?v=1734890993732" alt="encoder" width="80" height="80" class="center"></a><figcaption>Encoder</figcaption>
-      </section>
-    </article>
-    </div>
+      <div class="logo">
+        <header><h1 align="left">Library</h1></header>
+        <img
+          src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/favicon.png?v=1734958400365"
+          alt="logo"
+          align="right"
+          id="logo"
+        />
+      </div>
+      <hr />
+      <p>
+        A webpage showcasing the possible ciphers on this website. It gives the
+        user a basic description of the cipher, and teaches them how they can
+        decipher the code on their own. Here, people can browse and learn about
+        the different kinds of ciphers that have been made possible to the world
+        today.
+      </p>
+      <div class="Ciphers">
+        <article id="Sets">
+          <section id="Caesar">
+            <h2 class="Ciheaders">Caesar Cipher</h2>
+            <p class="Citext">
+              A simple and classic way to encode messages. Caesar Cipher is a
+              substitution cipher, meaning that the original letter will be
+              replaced by another letter or symbol. Caesar involves shifting
+              letters based on a certain key (a user input) and the shifted
+              letter will be the original letter's encryptment. The most typical
+              key for Caesar is 3.
+              <br /><br />
+              Method:
+              <br />
+              Let's say that the inputted text to decode was "Bill," and the
+              shift key is 3. This means that A=D, B=E, C=F.
+              <br />
+              Encoded message:
+              <br />
+              Eloo
+            </p>
+          </section>
+          <section id="Morse">
+            <h2 class="Ciheaders">Morse Code</h2>
+            <p class="Citext">
+              A famous Cipher known for its dots and dashes. This can be used in
+              any form, whether it be the flashing of light, the beeping of
+              doors, steps, winks, hands, etc. It is a simple substitution
+              cipher than can use 1-6 characters for just one original
+              character, and each character/letter is a different, unique
+              combination of dots and dashes/underscores, with slashes acting as
+              a space. This, however, does not include lowercase letters, and
+              all messages are decoded into uppercase.<br /><br />
+              Method:
+              <br />
+              There is only one set of combinations for this cipher, meaning
+              that it can be memorized, or referenced in a book or the internet.
+              Let's say that we have the phrase, "I like triangles," and encode
+              it into morse code.
+              <br />
+              Encoded message:
+              <br />
+              .. / .-.. .. -.- . / - .-. .. .- -. --. .-.. . ...
+              <br /><br />
+              Below here is a simple image featuring most characters and their
+              respective combinations:
+              <br />
+              <figure>
+                <img
+                  src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/IMG_4890.png?v=1734955669142"
+                  alt="Morse Code Keys"
+                  width="325px"
+                  height="200px"
+                />
+                <figcaption>
+                  Figure 1. An image featuring the different characters and
+                  their respective morse code combinations.
+                </figcaption>
+              </figure>
+            </p>
+          </section>
+          <section id="BaseSixFour">
+            <h2 class="Ciheaders">Base64</h2>
+            <p class="Citext">
+              A binary to text encoding scheme, Base64 is used for storage and
+              transfer for media related or only useable with ASCII text. It
+              ensures that data will be transported without modification. Based
+              on the ASCII format, the numbers corresponding to the letter will
+              be turned into an 8-bit binary value, which will then be split
+              into 6-bit values, and following the base64 key, the numbers that
+              equal to the value of the 6-bit will be used as the guide for
+              finding out which letter will be used in encoding the input.
+            </p>
+          </section>
+          <section id="Keyword">
+            <h2 class="Ciheaders">Keyword Cipher</h2>
+            <p class="Citext">
+              Another simple substitution cipher, but this time involves the
+              user thinking of a keyword. This keyword will then be placed in
+              the front of the new substituted letters, and the letters that go
+              after that will follow their basic alphabetical order. This does
+              not have the use of lowercase letters. If there are duplicate
+              letters in the word (i.e. BILLY), then the duplicate is removed
+              (will be BILY).
+              <br />
+              An example of the cipher is this: imagine our keyword is PARTY.
+              This will then correspond to this:
+              <br />
+              <figure>
+                <img
+                  src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/IMG_4891.jpeg?v=1734958066250"
+                  alt="Board of Keyword Cipher: PARTY"
+                  width="400px"
+                  height="100px"
+                />
+                <figcaption>
+                  Figure 2. A picture featuring what the cipher substitute looks
+                  like when the keyword is PARTY.
+                </figcaption>
+              </figure>
+            </p>
+          </section>
+          <section id="Vigenere">
+            <h2 class="Ciheaders">Vigenere Cipher</h2>
+            <p class="Citext">
+              A slightly trickier substitution cipher that also involves a
+              keyword. This is shown through a square where each column and row
+              has a letter represented to them, and the letter is the first to
+              be seen in the column/row. It still follows the alphabetical
+              order, and the message will be encrypted by the column, and the
+              keyword by the row. The intersection of column and row will be the
+              substituted letter for the original letter. This only uses
+              uppercase letters.
+              <br />
+              Here is an image featuring the table used for vigenere cipher, and
+              an example:
+              <figure>
+                <img
+                  src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/IMG_4892.jpeg?v=1734958754493"
+                  alt="Vigenere Cipher Table"
+                  width="300px"
+                  height="350px"
+                />
+              </figure>
+            </p>
+          </section>
+          <section id="Integer">
+            <h2 class="Ciheaders">A1Z26</h2>
+            <p class="Citext">A substitution cipher wherein </p>
+          </section>
+          <section id="RailFence">
+            <h2 class="Ciheaders">Rail Fence Cipher</h2>
+            <p class="Citext">[Insert paragraph here]</p>
+          </section>
+          <section id="Affine">
+            <h2 class="Ciheaders">Affine Cipher</h2>
+            <p class="Citext">[Insert paragraph here]</p>
+          </section>
+          <section id="Bacon">
+            <h2 class="Ciheaders">Bacon Cipher</h2>
+            <p class="Citext">[Insert paragraph here]</p>
+          </section>
+          <section id="SMS">
+            <h2 class="Ciheaders">Multitap Phone SMS</h2>
+            <p class="Citext">[Insert paragraph here]</p>
+          </section>
+        </article>
+        <article id="Settings">
+          <section class="Setting">
+            <a href="index.html"
+              ><img
+                src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/home.png?v=1734891003623"
+                alt="home"
+                width="80"
+                height="80"
+                class="center"
+            /></a>
+            <figcaption>Home</figcaption>
+          </section>
+          <section class="Setting">
+            <a href="decoder.html"
+              ><img
+                src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/padlock-unlock.png?v=1734890976203"
+                alt="decoder"
+                width="80"
+                height="80"
+                class="center"
+            /></a>
+            <figcaption>Decoder</figcaption>
+          </section>
+          <section class="Setting">
+            <a href="encoder.html"
+              ><img
+                src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/secured-lock.png?v=1734890993732"
+                alt="encoder"
+                width="80"
+                height="80"
+                class="center"
+            /></a>
+            <figcaption>Encoder</figcaption>
+          </section>
+        </article>
+      </div>
       <div class="clear"></div>
     </main>
     <footer>
       <p id="footer">
         Copyright &copy; 2024 WDProjCesiumBuycoCruz
-        <br/>
+        <br />
         References:
+        <br />
+        Base64 - MDN Web Docs Glossary: Definitions of Web-related terms | MDN.
+        (2024, November 4). MDN Web Docs.
+        https://developer.mozilla.org/en-US/docs/Glossary/Base64#
+        <br />
+        Life, S. (2024, July 11). Learn Morse code with this Morse translator
+        and decoder. Scout Life Magazine.
+        https://scoutlife.org/hobbies-projects/funstuff/575/morse-code-translator/
+        <br />
+        Freepik. (n.d.-a). Home free icon. Flaticon.
+        https://www.flaticon.com/free-icon/home_1946436
+        <br />
+        Freepik. (n.d.-b). Secured Lock free icon. Flaticon.
+        https://www.flaticon.com/free-icon/secured-lock_17354
+        <br />
+        Gandy, D. (n.d.). Padlock Unlock free icon. Flaticon.
+        https://www.flaticon.com/free-icon/padlock-unlock_25215
+        <br />
+        inkubators. (n.d.). Library free icon. Flaticon.
+        https://www.flaticon.com/free-icon/library_2908601
         <br/>
-        Base64 - MDN Web Docs Glossary: Definitions of Web-related terms | MDN. (2024, November 4). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Glossary/Base64#
-        <br/>
-        Freepik. (n.d.-a). Home free icon. Flaticon. https://www.flaticon.com/free-icon/home_1946436 
-        <br/>
-        Freepik. (n.d.-b). Secured Lock free icon. Flaticon. https://www.flaticon.com/free-icon/secured-lock_17354
-        <br/>
-        Gandy, D. (n.d.). Padlock Unlock free icon. Flaticon. https://www.flaticon.com/free-icon/padlock-unlock_25215 
-        <br/>
-        inkubators. (n.d.). Library free icon. Flaticon. https://www.flaticon.com/free-icon/library_2908601
+        Vectorslab. (n.d.). Access free icon. Flaticon. 
+        https://www.flaticon.com/free-icon/access_9657821
       </p>
     </footer>
   </body>
