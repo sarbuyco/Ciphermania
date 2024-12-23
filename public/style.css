@@ -111,7 +111,7 @@ section, .encodeoutput, .decodeoutput{
 
 #library {
   width: 19%; 
-  height: 480px;
+  height: 595px;
   float: left;
 }
 
@@ -148,7 +148,7 @@ footer{
   height: 120px;
 }
 
-.clear { clear: both; height: 190px; }
+.clear { clear: both; height: 120px; }
 
 #footer{
   font-size: 12px;

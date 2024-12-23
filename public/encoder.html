@@ -17,6 +17,7 @@
     key = 26 + key;
   }
   const arr = text.split("");
+  console.log(arr);
   
   var loweralphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 
                   'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
@@ -27,16 +28,16 @@
   
   for (var i = 0; i < arr.length; i++) {
     check = false;
-    for (var j = 0; j < upperalphabet.length; j++) {
+    for (var j = 0; j < upperalphabet.length; j = j + 1) {
       if (arr[i] == upperalphabet[j]) {
-      strtext = strtext + upperalphabet[(j+key) % 26]
+      strtext = strtext + upperalphabet[(j+key)]
       check = true;
       }
     }
     if (check == false) {
-      for (var j = 0; j < loweralphabet.length; j++) {
+      for (var j = 0; j < loweralphabet.length; j = j + 1) {
       if (arr[i] == loweralphabet[j]) {
-      strtext = strtext + loweralphabet[(j+key) % 26]
+      strtext = strtext + loweralphabet[(j+key)]
       check = true;
       }
     }
@@ -72,7 +73,7 @@
       </section>
       <article class="inputOutput"> 
         <label>
-          Select cipher then type message here (Separate each character with a space): <input type="text" id="encodeinput" />
+          Select cipher then type message here: <input type="text" id="encodeinput" />
         </label>
         <br/>
         <label>
@@ -85,7 +86,7 @@
       </article>
       <article id="Settings">
       <section class="Setting">
-      <a href="index.html"><img src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/home.png?v=1734891003623" alt="home" width="80" height="80" class="center"></a>
+      <a href="index.html"><img src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/home.png?v=1734891003623" alt="home" width="80" height="80" class="center"><figcaption>Home</figcaption></a>
       </section>
       <section class="Setting">
       <a href="decoder.html"><img src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/padlock-unlock.png?v=1734890976203" alt="decoder" width="80" height="80" class="center"></a>
