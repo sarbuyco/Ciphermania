@@ -1,14 +1,5 @@
-/******************************************************************************
-START Glitch hello-app default styles
-
-The styles in this section do some minimal CSS resets, set default fonts and 
-colors, and handle the layout for our footer and "Remix on Glitch" button. If
-you're new to CSS they may seem a little complicated, but you can scroll down
-to this section's matching END comment to see page-specific styles.
-******************************************************************************/
-/* Our default values set as CSS variables */
-:root {
-  --color-bg: #BDC9FF;
+html{
+  background-color: #fff793;
   --color-text-main: #000000;
   --color-text-header: #2800FF;
   --color-primary: #AFECE0;
@@ -175,8 +166,7 @@ p {
 form {
   margin: 0.75rem 0;
 }
-button,
-input {
+button, input {
   font-family: inherit;
   font-size: 100%;
   background: #FFFFFF;
@@ -207,7 +197,7 @@ div{
 
 section, .encodeoutput, .decodeoutput{
   border-style: solid;
-  border-width: 1px;
+  border-width: 2px;
   border-color: black;
 }
 
@@ -237,8 +227,10 @@ section, .encodeoutput, .decodeoutput{
 
 .codeselect{
   width: 10%; 
-  height: 480px;
+  height: 250px;
   float: left;
+  background-color: #f8ed65;
+  border-radius: px;
 }
 
 .inputOutput{
@@ -258,8 +250,8 @@ footer{
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #ebe6ff;
-  color: black;
+  background-color: black;
+  color: white;
   text-align: left;
 }
 
