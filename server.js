@@ -44,10 +44,7 @@ function CaesarEncode() {
   var code = document.getElementById("encodeinput");
   var key = document.getElementById("encodekeyinput").value;
   
-  if (key > 0) {
-    key = key;
-  }
-  else {
+  if (key < 0) {
     key = 26 + key
   }
   console.log(code)
@@ -81,4 +78,6 @@ function CaesarEncode() {
       strcode = strcode + arr[i]
     }
   }
+  
+  encodeoutput.innerHTML = strcode;
 }
