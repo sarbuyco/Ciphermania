@@ -156,6 +156,7 @@
                   width="300px"
                   height="350px"
                 />
+                <figcaption>Vigenere Cipher, with example.</figcaption>
               </figure>
             </p>
           </section>
@@ -167,11 +168,23 @@
           <section id="RailFence">
             <h2 class="Ciheaders">Rail Fence Cipher</h2>
             <p class="Citext">A cipher that involves a table, and primarily rows. depending on the key (row) inputted by the user, its sentence can vary, and the message will be placed in the table in a zigzag-like formation. The message is then read out starting from row 1 until row n, in which that will be the ciphered message output.
-            <br> For example, our message will be "Sixty Degrees" </p>
+            <br> For example, our message will be "Sixty Degrees," and our key is 3, so there will be three rows. Here is an image for its visualization:</p>
+            <figure>
+              <img src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/IMG_4897.jpeg?v=1734961742301" alt="Sixty Degrees In Rail Fence Cipher" width="400px" height="150px">
+              <figcaption>Figure 4. Sixty Degrees in Rail Fence Cipher</figcaption>
+            </figure>
+            <br>
+            <p class="Citext">
+            With this reference, reading left to right starting from row one, the new message will be "SYGSI TEREXDE"
+            </p>
           </section>
           <section id="Affine">
             <h2 class="Ciheaders">Affine Cipher</h2>
-            <p class="Citext">[Insert paragraph here]</p>
+            <p class="Citext">A cipher wherein each letter first corresponds to a number from 0-25 (based on their order in the alphabet).
+               Let this letter's corresponding number be x.
+               Then, if your first key input number is a and your second key input number is b, a is multiplied to x and b is added to the product.
+               Get this result and get the modulus of this divided by 26 (for the 26 letters of the English alphabet.)
+            </p>
           </section>
           <section id="Bacon">
             <h2 class="Ciheaders">Bacon Cipher</h2>
@@ -233,6 +246,8 @@
         Life, S. (2024, July 11). Learn Morse code with this Morse translator
         and decoder. Scout Life Magazine.
         https://scoutlife.org/hobbies-projects/funstuff/575/morse-code-translator/
+        <br/>
+        Saha, A. (2023, August 24). Understanding the vigenère cipher. DEV Community. https://dev.to/cognivibes/understanding-the-vigenere-cipher-16g5
         <br />
         Freepik. (n.d.-a). Home free icon. Flaticon.
         https://www.flaticon.com/free-icon/home_1946436
