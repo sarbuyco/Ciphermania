@@ -22,14 +22,22 @@
       <form>
         <select name="codes" id="codes">
           <option value="caesar">Caesar</option>
-          <option value="morse">Morse</option>                              
+          <option value="morse">Morse</option>    
+          <option value="basesixfour">Base64</option>
+          <option value="keyword">Keyword</option>   
+          <option value="vigenere">Vigenere</option>
+          <option value="integer">A1Z26</option>   
+          <option value="railfence">Rail Fence</option>
+          <option value="affine">Affine</option>   
+          <option value="bacon">Bacon</option>
+          <option value="sms">Multitap Phone SMS</option>   
         </select>
         <input type="submit">
       </form>
       </section>
       <article class="inputOutput"> 
         <label>
-          Select cipher then type message here (Separate each letter with a space): <input type="text" id="encodeinput" />
+          Select cipher then type message here (Separate each character with a space): <input type="text" id="encodeinput" />
         </label>
         <button onclick="insert output js function"> Encode </button>
         <br/>

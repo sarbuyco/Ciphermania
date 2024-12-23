@@ -191,8 +191,8 @@ section, .encodeoutput, .decodeoutput{
 }
 
 .codeselect{
-  width: 10%; 
-  height: 250px;
+  width: 12%; 
+  height: 400px;
   float: left;
   background-color: #f8ed65;
   border-radius: 9px;
