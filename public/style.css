@@ -1,5 +1,5 @@
 html{
-  background-color: #fffad8;
+  background-color: #eceadc;
   font-family: "HK Grotesk";
   font-family-header: "HK Grotesk";
 }
@@ -59,9 +59,6 @@ p {
   margin: 2rem 0 0;
 }
 
-form {
-  margin: 0.75rem 0;
-}
 button, input {
   font-family: inherit;
   font-size: 100%;
