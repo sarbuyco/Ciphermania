@@ -30,14 +30,14 @@
     check = false;
     for (var j = 0; j < upperalphabet.length; j = j + 1) {
       if (arr[i] == upperalphabet[j]) {
-      strtext = strtext + upperalphabet[(j+key)]
+      strtext = strtext + upperalphabet[(j+key) % 26]
       check = true;
       }
     }
     if (check == false) {
       for (var j = 0; j < loweralphabet.length; j = j + 1) {
       if (arr[i] == loweralphabet[j]) {
-      strtext = strtext + loweralphabet[(j+key)]
+      strtext = strtext + loweralphabet[(j+key) % 26]
       check = true;
       }
     }
@@ -60,16 +60,16 @@
     </div>
     <div class="encoder">
       <section class="codeselect">
-          <button onclick="cipherselect(1)" name="cipher" type="text" value="caesar">Caesar</button>
-          <button onclick="cipherselect(2)" name="cipher" type="text" value="morse">Morse</button>    
-          <button onclick="cipherselect(3)" name="cipher" type="text" value="basesixfour">Base64</button>
-          <button onclick="cipherselect(4)" name="cipher" type="text" value="keyword">Keyword</button>   
-          <button onclick="cipherselect(5)" name="cipher" type="text" value="vigenere">Vigenere</button>
-          <button onclick="cipherselect(6)" name="cipher" type="text" value="integer">A1Z26</button>   
-          <button onclick="cipherselect(7)" name="cipher" type="text" value="railfence">Rail Fence</button>
-          <button onclick="cipherselect(8)" name="cipher" type="text" value="affine">Affine</button>   
-          <button onclick="cipherselect(9)" name="cipher" type="text" value="bacon">Bacon</button>
-          <button onclick="cipherselect(10)" name="cipher" type="text" value="sms">Multitap Phone SMS</button>
+          <button onclick="cipherselect(1)" name="cipher" type="text" value="caesar" class="button">Caesar</button>
+          <button onclick="cipherselect(2)" name="cipher" type="text" value="morse" class="button">Morse</button>    
+          <button onclick="cipherselect(3)" name="cipher" type="text" value="basesixfour" class="button">Base64</button>
+          <button onclick="cipherselect(4)" name="cipher" type="text" value="keyword" class="button">Keyword</button>   
+          <button onclick="cipherselect(5)" name="cipher" type="text" value="vigenere" class="button">Vigenere</button>
+          <button onclick="cipherselect(6)" name="cipher" type="text" value="integer" class="button">A1Z26</button>   
+          <button onclick="cipherselect(7)" name="cipher" type="text" value="railfence" class="button">Rail Fence</button>
+          <button onclick="cipherselect(8)" name="cipher" type="text" value="affine" class="button">Affine</button>   
+          <button onclick="cipherselect(9)" name="cipher" type="text" value="bacon" class="button">Bacon</button>
+          <button onclick="cipherselect(10)" name="cipher" type="text" value="sms" class="button">Multitap Phone SMS</button>
       </section>
       <article class="inputOutput"> 
         <label>
@@ -86,13 +86,13 @@
       </article>
       <article id="Settings">
       <section class="Setting">
-      <a href="index.html"><img src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/home.png?v=1734891003623" alt="home" width="80" height="80" class="center"><figcaption>Home</figcaption></a>
+        <a href="index.html"><img src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/home.png?v=1734891003623" alt="home" width="80" height="80" class="center"></a><figcaption>Home</figcaption>
       </section>
       <section class="Setting">
-      <a href="decoder.html"><img src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/padlock-unlock.png?v=1734890976203" alt="decoder" width="80" height="80" class="center"></a>
+        <a href="decoder.html"><img src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/padlock-unlock.png?v=1734890976203" alt="decoder" width="80" height="80" class="center"></a><figcaption>Decoder</figcaption>
       </section>
       <section class="Setting">
-        <a href="library.html"><img src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/library.png?v=1734890999960" alt="library" width="80" height="80" class="center"></a>
+        <a href="library.html"><img src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/library.png?v=1734890999960" alt="library" width="80" height="80" class="center"></a><figcaption>Library</figcaption>
       </section>
     </article>
     </div>
