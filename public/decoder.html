@@ -19,22 +19,22 @@
     </div>
     <div class="decoder">
       <section class="codeselect">
-          <button name="cipher" type="text" value="caesar">Caesar</button>
-          <button name="cipher" type="text" value="morse">Morse</button>    
-          <button name="cipher" type="text" value="basesixfour">Base64</button>
-          <button name="cipher" type="text" value="keyword">Keyword</button>   
-          <button name="cipher" type="text" value="vigenere">Vigenere</button>
-          <button name="cipher" type="text" value="integer">A1Z26</button>   
-          <button name="cipher" type="text" value="railfence">Rail Fence</button>
-          <button name="cipher" type="text" value="affine">Affine</button>   
-          <button name="cipher" type="text" value="bacon">Bacon</button>
-          <button name="cipher" type="text" value="sms">Multitap Phone SMS</button>
+          <button onclick="cipherselect(11)" name="cipher" type="text" value="caesar">Caesar</button>
+          <button onclick="cipherselect(12)" name="cipher" type="text" value="morse">Morse</button>    
+          <button onclick="cipherselect(13)" name="cipher" type="text" value="basesixfour">Base64</button>
+          <button onclick="cipherselect(14)" name="cipher" type="text" value="keyword">Keyword</button>   
+          <button onclick="cipherselect(15)" name="cipher" type="text" value="vigenere">Vigenere</button>
+          <button onclick="cipherselect(16)" name="cipher" type="text" value="integer">A1Z26</button>   
+          <button onclick="cipherselect(17)" name="cipher" type="text" value="railfence">Rail Fence</button>
+          <button onclick="cipherselect(18)" name="cipher" type="text" value="affine">Affine</button>   
+          <button onclick="cipherselect(19)" name="cipher" type="text" value="bacon">Bacon</button>
+          <button onclick="cipherselect(20)" name="cipher" type="text" value="sms">Multitap Phone SMS</button>
       </section>
       <article class="inputOutput"> 
         <label>
           Select cipher then type code here (Separate each character equivalent of the message with a space): <input type="text" id="decodeinput" />
         </label>
-        <button onclick="Coder(FALSE)"> Decode </button>
+        <button onclick="Coder(cipherselect())"> Decode </button>
         <br/>
         <h2>Output</h2>
         <p id="decodeoutput"> </p>

@@ -25,3 +25,9 @@ app.get('/', (req, res) => {
 // This will create a web service for your own project
 const port = 3000;
 app.listen(port, () => console.log(`App listening to port ${port}`));
+
+function cipherselect(inputnumber) {
+  var input = inputnumber;
+  
+  return input;
+}
