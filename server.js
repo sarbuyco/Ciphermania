@@ -27,7 +27,19 @@ const port = 3000;
 app.listen(port, () => console.log(`App listening to port ${port}`));
 
 function cipherselect(inputnumber) {
-  var input = inputnumber;
+  var cipherinput = inputnumber;
   
-  return input;
+  return cipherinput;
+}
+
+function coder(cipherinput) {
+  var cipher = cipherinput;
+  if (cipher == 1)
+    CaesarEncode();
+  else if (cipher == 11)
+    CaesarDecode();
+}
+
+function CaesarEncode() {
+  
 }
