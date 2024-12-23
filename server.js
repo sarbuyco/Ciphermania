@@ -36,14 +36,13 @@ function coder(cipherinput) {
   var cipher = cipherinput;
   if (cipher == 1)
     CaesarEncode();
-  else if (cipher == 11)
-    CaesarDecode();
 }
 
 function CaesarEncode() {
   var code = document.getElementById("encodeinput");
   var key = document.getElementById("encodekeyinput").value;
-  
+  console.log(code);
+  console.log(key);
   if (key < 0) {
     key = 26 + key;
   }
