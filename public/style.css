@@ -222,3 +222,14 @@ margin: 20px;
   margin-left: 10px;
 }
 
+a {
+  color: #9F136C;
+}
+
+a:hover {
+  color: #AD96A8;
+}
+
+a:visited {
+  color: #E5D0D9;
+}
