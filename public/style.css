@@ -27,6 +27,7 @@ html{
 
 body {
   background-color: var(--color-bg);
+  margin: 30px;
 }
 
 /* Page structure */
@@ -74,11 +75,13 @@ button:hover{
 }
 .select {
   margin-left: 10px;
+  margin-bottom: 10px;
 }
 .button{
   transition-duration: 0.4s;
   cursor: pointer;
   margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 label {
