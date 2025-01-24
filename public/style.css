@@ -242,3 +242,8 @@ a:visited {
 a:hover {
   color: #00A3DD;
 }
+
+a:active {
+  background-color: black;
+  color: yellow;
+}
