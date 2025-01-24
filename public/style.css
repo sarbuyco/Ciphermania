@@ -128,6 +128,11 @@ section, .encodeoutput, .decodeoutput{
   float: left;
 }
 
+#libraryHomeNav{
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
 #nav{
   width: 80%;
   height: 480px;
