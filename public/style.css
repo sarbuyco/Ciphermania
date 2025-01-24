@@ -230,10 +230,10 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  color: #00A3DD;
-}
-
 a:visited {
   color: #9F136C;
+}
+
+a:hover {
+  color: #00A3DD;
 }
