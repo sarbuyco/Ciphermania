@@ -76,12 +76,14 @@ button:hover{
 .select {
   margin-left: 10px;
   margin-bottom: 10px;
+  color: #9F136C;
 }
 .button{
   transition-duration: 0.4s;
   cursor: pointer;
   margin-left: 10px;
   margin-bottom: 10px;
+  color: #00A3DD;
 }
 
 label {
