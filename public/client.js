@@ -475,3 +475,81 @@ function AffineEncode() {
         console.log(strtext);
         document.getElementById("encodeoutput").innerHTML = strtext;
       }
+
+function AffineDecode() {
+        //Get the values of the input and the shift key
+        var text = document.getElementById("decodeinput").value + "";
+        var key = document.getElementById("decodekeyinput").value;
+        console.log(text);
+        const arr = text.split("");
+        const passarr = key.split(" ");
+        //turns the key into singular integers
+        var slope = Number(passarr[0]);
+        var intercept = Number(passarr[1]);
+        console.log(arr);
+        console.log(slope + intercept);
+        //defining the alphabet that the input array will be compared to
+        var loweralphabet = [
+          "a","b","c","d","e","f","g","h","i","j","k",
+          "l","m","n","o","p","q","r","s","t","u","v",
+          "w","x","y","z"
+        ];
+        var upperalphabet = [
+          "A","B","C","D","E","F","G","H","I","J","K",
+          "L","M","N","O","P","Q","R","S","T","U","V",
+          "W","X","Y","Z"
+        ];
+        
+        //bool variable to check if the character is a letter or special character
+        var check = false;
+        //inverse of slope
+        var slopeinv = 0;
+        var flag = 0;
+        //converts lowercase to uppercase
+        var lowup = "";
+        //The variable to be outputted
+        var strtext = "";
+        
+        for (let i = 0; i < 26; i++) {
+        flag = (slope * i) % 26;
+         
+        //Check if (a*i)%26 == 1,
+        //then i will be the multiplicative inverse of a
+        if (flag == 1)
+        { 
+            slopeinv = i;
+        }
+        }
+
+        for (var i = 0; i < arr.length; i++) {
+          //reset the check variable back to false
+          check = false;
+          //checks if the array character is an uppercase letter, and if it is, substitutes another letter by calculating change in slope.
+          for (var j = 0; j < upperalphabet.length; j = j + 1) {
+            if (arr[i] == upperalphabet[j]) {
+              //decryption formula slope^-1 (x - intercept) * 26. Added 'A' to bring it in range of ASCII alphabet[ 65-90 | A-Z ]
+              strtext = strtext + String.fromCharCode(((slopeinv * ((arr[i].charCodeAt(0)+65 - intercept)) % 26)) + 65);
+              //if it is equal to the uppercase letter, check will be true
+              check = true;
+            }
+          }
+          //if character has not been identified as an uppercase letter, then it will start to browse through the lowercase letters, following the same tactic.
+          if (check == false) {
+            for (var j = 0; j < loweralphabet.length; j = j + 1) {
+              if (arr[i] == loweralphabet[j]) {
+                lowup = upperalphabet[j];
+                strtext = strtext + String.fromCharCode(((slopeinv * ((lowup.charCodeAt(0)+65 - intercept)) % 26)) + 65);
+                check = true;
+              }
+            }
+          }
+          //if it is still not identified as either lowercase or uppercase letter, then it is deemed a special character or a space, and is added into the string as itself.
+          if (check == false) {
+            strtext = strtext + arr[i];
+          }
+          
+        }
+        //outputs the string
+        console.log(strtext);
+        document.getElementById("decodeoutput").innerHTML = strtext;
+      }

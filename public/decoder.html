@@ -52,38 +52,7 @@
           Morse
         </button>
         <button
-          name="cipher"
-          type="text"
-          value="keyword"
-          class="button"
-        >
-          Keyword
-        </button>
-        <button
-          name="cipher"
-          type="text"
-          value="vigenere"
-          class="button"
-        >
-          Vigenere
-        </button>
-        <button
-          name="cipher"
-          type="text"
-          value="integer"
-          class="button"
-        >
-          A1Z26
-        </button>
-        <button
-          name="cipher"
-          type="text"
-          value="railfence"
-          class="button"
-        >
-          Rail Fence
-        </button>
-        <button
+          onclick="AffineDecode()"
           name="cipher"
           type="text"
           value="affine"
@@ -138,6 +107,9 @@
           Input necessary key: <input type="text" id="decodekeyinput" />
         </label>
         <br />
+        <p>
+          Keys:
+        </p>
         <h2 class="marginfix">Output</h2>
         <p class="marginfix" id="decodeoutput"></p>
       </article>
