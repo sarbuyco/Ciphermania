@@ -418,7 +418,7 @@ function MorseDecode() {
 function AffineEncode() {
         //Get the values of the input and the shift key
         var text = document.getElementById("encodeinput").value + "";
-        var key = "";
+        var key = document.getElementById("encodekeyinput").value;
         console.log(text);
         const arr = text.split("");
         const passarr = key.split(" ");

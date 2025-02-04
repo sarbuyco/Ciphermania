@@ -83,6 +83,7 @@
           Rail Fence
         </button>
         <button
+          onclick="AffineEncode()"
           name="cipher"
           type="text"
           value="affine"
@@ -91,7 +92,6 @@
           Affine
         </button>
         <button
-          onclick="AffineEncode()"
           name="cipher"
           type="text"
           value="bacon"
@@ -153,14 +153,7 @@
           <figcaption>Home</figcaption>
         </section>
         <section class="Setting">
-          <a href="decoder.html"
-            ><img
-              src="https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/padlock-unlock.png?v=1734890976203"
-              alt="decoder"
-              width="80"
-              height="80"
-              class="center"
-          /></a>
+          <a href="decoder.html" id="decoderNav"class="center"></a>
           <figcaption>Decoder</figcaption>
         </section>
         <section class="Setting">

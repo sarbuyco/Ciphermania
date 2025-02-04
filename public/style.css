@@ -265,6 +265,24 @@ a#decoderNav:hover{
   height: 25%;
   background-image: url(https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/lock%20sprites.jpg?v=1738688788590);
   background-repeat: no-repeat;
-  background-position: -550px -315px;
+  background-position: -100px -315px;
+}
+
+a#encoderNav{
+  display: inline-block;
+  width: 100%;
+  height: 25%;
+  background-image: url(https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/lock%20sprites.jpg?v=1738688788590);
+  background-repeat: no-repeat;
+  background-position: -778px -330px;
+}
+
+a#encoderNav:hover{
+  display: inline-block;
+  width: 100%;
+  height: 25%;
+  background-image: url(https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/lock%20sprites.jpg?v=1738688788590);
+  background-repeat: no-repeat;
+  background-position: -328px -330px;
 }
 
