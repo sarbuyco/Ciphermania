@@ -414,3 +414,64 @@ function MorseDecode() {
         console.log(strtext);
         document.getElementById("decodeoutput").innerHTML = strtext;
       }
+
+function AffineEncode() {
+        //Get the values of the input and the shift key
+        var text = document.getElementById("encodeinput").value + "";
+        var key = "";
+        console.log(text);
+        const arr = text.split("");
+        const passarr = key.split(" ");
+        //turns the key into singular integers
+        var slope = Number(passarr[0]);
+        var intercept = Number(passarr[1]);
+        console.log(arr);
+        console.log(slope + intercept);
+        //defining the alphabet that the input array will be compared to
+        var loweralphabet = [
+          "a","b","c","d","e","f","g","h","i","j","k",
+          "l","m","n","o","p","q","r","s","t","u","v",
+          "w","x","y","z"
+        ];
+        var upperalphabet = [
+          "A","B","C","D","E","F","G","H","I","J","K",
+          "L","M","N","O","P","Q","R","S","T","U","V",
+          "W","X","Y","Z"
+        ];
+        
+        //bool variable to check if the character is a letter or special character
+        var check = false;
+        //The variable to be outputted
+        var strtext = "";
+
+        for (var i = 0; i < arr.length; i++) {
+          //reset the check variable back to false
+          check = false;
+          //checks if the array character is an uppercase letter, and if it is, substitutes another letter by calculating change in slope.
+          for (var j = 0; j < upperalphabet.length; j = j + 1) {
+            if (arr[i] == upperalphabet[j]) {
+              //modulo by 26 so that if slope * j + intercept is more than the alphabet array length, then it will go back to index zero.
+              strtext = strtext + upperalphabet[(((slope * j) + intercept) % 26)];
+              //if it is equal to the uppercase letter, check will be true
+              check = true;
+            }
+          }
+          //if character has not been identified as an uppercase letter, then it will start to browse through the lowercase letters, following the same tactic.
+          if (check == false) {
+            for (var j = 0; j < loweralphabet.length; j = j + 1) {
+              if (arr[i] == loweralphabet[j]) {
+                strtext = strtext + loweralphabet[(((slope * j) + intercept) % 26)];
+                check = true;
+              }
+            }
+          }
+          //if it is still not identified as either lowercase or uppercase letter, then it is deemed a special character or a space, and is added into the string as itself.
+          if (check == false) {
+            strtext = strtext + arr[i];
+          }
+          
+        }
+        //outputs the string
+        console.log(strtext);
+        document.getElementById("encodeoutput").innerHTML = strtext;
+      }
