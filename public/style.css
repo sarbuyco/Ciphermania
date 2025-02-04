@@ -326,16 +326,16 @@ a#libraryNav{
   display: inline-block;
   width: 100%;
   height: 100px;
-  background-image: url(https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/other%20sprites.webp?v=1738701619078);
+  background-image: url(https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/library%20sprites.jpg?v=1738702490116);
   background-repeat: no-repeat;
-  background-position: -565px -240px;
+  background-position: -220px -150px;
 }
 
 a#libraryNav:hover{
   display: inline-block;
   width: 100%;
   height: 100px;
-  background-image: url(https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/other%20sprites.webp?v=1738701619078);
+  background-image: url(https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/library%20sprites.jpg?v=1738702490116);
   background-repeat: no-repeat;
-  background-position: -902px -128px;
+  background-position: -405px -30px;
 }
