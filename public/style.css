@@ -250,8 +250,8 @@ a:active {
   color: yellow;
 }
 
-#encoderNav{
-  background-image: url(https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/lock%20sprites.jpg?v=1738688788590) no-repeat;
+a#encoderNav{
   width: 80;
   height: 80;
+  background-image: url(https://as1.ftcdn.net/jpg/03/63/43/52/1000_F_363435271_3ILqMs4Tul9Tjk6milRzeQgdZX8j6Qrz.jpg) no-repeat -50px -50px;
 }
