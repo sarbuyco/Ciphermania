@@ -251,7 +251,8 @@ a:active {
 }
 
 a#encoderNav{
-  width: 80;
-  height: 80;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
   background-image: url(https://as1.ftcdn.net/jpg/03/63/43/52/1000_F_363435271_3ILqMs4Tul9Tjk6milRzeQgdZX8j6Qrz.jpg) no-repeat -50px -50px;
 }
