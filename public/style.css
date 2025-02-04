@@ -205,7 +205,7 @@ float: right;
   width: 10%
 }
 
-.Setting img {
+.Setting img{
   padding: 10px;
 }
 
@@ -248,4 +248,10 @@ a:hover {
 a:active {
   background-color: black;
   color: yellow;
+}
+
+#encoderNav{
+  background-image: url();
+  width: 80;
+  height: 80;
 }
