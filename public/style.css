@@ -143,7 +143,7 @@ section, .encodeoutput, .decodeoutput{
 
 .codeselect{
   width: 12%; 
-  height: 440px;
+  height: fit-content;
   float: left;
   background-color: #f8ed65;
   border-radius: 9px;
