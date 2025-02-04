@@ -172,7 +172,7 @@ footer{
   overflow: scroll;
 }
 
-.clear { clear: both; height: 120px; }
+.clear { clear: both; height: 240px; }
 
 #footer{
   font-size: 12px;

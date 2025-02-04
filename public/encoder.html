@@ -33,7 +33,7 @@
         solution needed to encrypt the message-->
         <!--caesar cipher is currently available-->
         <button
-          onclick="cipherselect(1)"
+          onclick="CaesarEncode()"
           name="cipher"
           type="text"
           value="caesar"
@@ -42,7 +42,6 @@
           Caesar
         </button>
         <button
-          onclick="cipherselect(2)"
           name="cipher"
           type="text"
           value="morse"
@@ -51,16 +50,6 @@
           Morse
         </button>
         <button
-          onclick="cipherselect(3)"
-          name="cipher"
-          type="text"
-          value="basesixfour"
-          class="button"
-        >
-          Base64
-        </button>
-        <button
-          onclick="cipherselect(4)"
           name="cipher"
           type="text"
           value="keyword"
@@ -69,7 +58,6 @@
           Keyword
         </button>
         <button
-          onclick="cipherselect(5)"
           name="cipher"
           type="text"
           value="vigenere"
@@ -78,7 +66,6 @@
           Vigenere
         </button>
         <button
-          onclick="cipherselect(6)"
           name="cipher"
           type="text"
           value="integer"
@@ -87,7 +74,6 @@
           A1Z26
         </button>
         <button
-          onclick="cipherselect(7)"
           name="cipher"
           type="text"
           value="railfence"
@@ -96,7 +82,6 @@
           Rail Fence
         </button>
         <button
-          onclick="cipherselect(8)"
           name="cipher"
           type="text"
           value="affine"
@@ -105,7 +90,6 @@
           Affine
         </button>
         <button
-          onclick="cipherselect(9)"
           name="cipher"
           type="text"
           value="bacon"
@@ -114,7 +98,6 @@
           Bacon
         </button>
         <button
-          onclick="cipherselect(10)"
           name="cipher"
           type="text"
           value="sms"
@@ -151,7 +134,7 @@
           Input necessary key: <input type="string" id="encodekeyinput" />
         </label>
         <br />
-        <button onclick="CaesarEncode()" class="button">Encode</button>
+        <button class="button">Encode</button>
         <h2 class="marginfix">Output</h2>
         <p class="marginfix" id="encodeoutput"></p>
       </article>
