@@ -339,3 +339,8 @@ a#libraryNav:hover{
   background-repeat: no-repeat;
   background-position: -405px -30px;
 }
+
+#aboutUs{
+  float: left;
+  width: 90%;
+}
