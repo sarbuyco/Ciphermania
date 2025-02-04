@@ -303,3 +303,39 @@ a#aboutUsNav:hover{
   background-repeat: no-repeat;
   background-position: -902px -128px;
 }
+
+a#homeNav{
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+  background-image: url(https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/other%20sprites.webp?v=1738701619078);
+  background-repeat: no-repeat;
+  background-position: -55px -20px;
+}
+
+a#homeNav:hover{
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+  background-image: url(https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/other%20sprites.webp?v=1738701619078);
+  background-repeat: no-repeat;
+  background-position: -902px -128px;
+}
+
+a#libraryNav{
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+  background-image: url(https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/other%20sprites.webp?v=1738701619078);
+  background-repeat: no-repeat;
+  background-position: -565px -240px;
+}
+
+a#libraryNav:hover{
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+  background-image: url(https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/other%20sprites.webp?v=1738701619078);
+  background-repeat: no-repeat;
+  background-position: -902px -128px;
+}
