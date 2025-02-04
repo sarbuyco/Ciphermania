@@ -38,45 +38,112 @@ function coder(cipherinput) {
     CaesarEncode();
 }
 
-function CaesarEncode() {
-  var code = document.getElementById("encodeinput");
-  var key = document.getElementById("encodekeyinput").value;
-  console.log(code);
-  console.log(key);
-  if (key < 0) {
-    key = 26 + key;
-  }
-  console.log(code)
-  const arr = code.split("");
-  
-  var loweralphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 
-                  'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
-  var upperalphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 
-                  'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
-  var check = false;
-  var strcode = "";
-  
-  for (var i = 0; i < arr.length; i++) {
-    check = false;
-    for (var j = 0; j < upperalphabet.length; j++) {
-      if (arr[i] == upperalphabet[j]) {
-      strcode = strcode + upperalphabet[(j+key) % 26]
-      check = true;
+//Beta only includes Encode Caesar Function for now
+      function CaesarEncode() {
+        //Get the values of the input and the shift key
+        var text = document.getElementById("encodeinput").value + "";
+        var key = document.getElementById("encodekeyinput").value;
+        //testing if it works
+        console.log(text);
+        console.log(key);
+        //Shift key can go negative. This is to make sure it is equal to the normal positive shift key
+        key = key * -1;
+        if (key * -1 > 0) {
+          key = 26 - key;
+        }
+        //splitting the characters into an array
+        const arr = text.split("");
+        console.log(arr);
+        //defining the alphabet that the input array will be compared to
+        var loweralphabet = [
+          "a",
+          "b",
+          "c",
+          "d",
+          "e",
+          "f",
+          "g",
+          "h",
+          "i",
+          "j",
+          "k",
+          "l",
+          "m",
+          "n",
+          "o",
+          "p",
+          "q",
+          "r",
+          "s",
+          "t",
+          "u",
+          "v",
+          "w",
+          "x",
+          "y",
+          "z",
+        ];
+        var upperalphabet = [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E",
+          "F",
+          "G",
+          "H",
+          "I",
+          "J",
+          "K",
+          "L",
+          "M",
+          "N",
+          "O",
+          "P",
+          "Q",
+          "R",
+          "S",
+          "T",
+          "U",
+          "V",
+          "W",
+          "X",
+          "Y",
+          "Z",
+        ];
+        
+        //bool variable to check if the character is a letter or special character
+        var check = false;
+        //The variable to be outputted
+        var strtext = "";
+
+        for (var i = 0; i < arr.length; i++) {
+          //reset the check variable back to false
+          check = false;
+          //checks if the array character is an uppercase letter, and if it is, substitutes another letter by adding the shift key.
+          for (var j = 0; j < upperalphabet.length; j = j + 1) {
+            if (arr[i] == upperalphabet[j]) {
+              //modulo by 26 so that if j + key is more than the alphabet array length, then it will go back to index zero.
+              strtext = strtext + upperalphabet[(j + key) % 26];
+              //if it is equal to the uppercase letter, check will be true
+              check = true;
+            }
+          }
+          //if character has not been identified as an uppercase letter, then it will start to browse through the lowercase letters, following the same tactic.
+          if (check == false) {
+            for (var j = 0; j < loweralphabet.length; j = j + 1) {
+              if (arr[i] == loweralphabet[j]) {
+                strtext = strtext + loweralphabet[(j + key) % 26];
+                check = true;
+              }
+            }
+          }
+          //if it is still not identified as either lowercase or uppercase letter, then it is deemed a special character or a space, and is added into the string as itself.
+          if (check == false) {
+            strtext = strtext + arr[i];
+          }
+        }
+        //outputs the string
+        console.log(strtext);
+        document.getElementById("encodeoutput").innerHTML = strtext;
       }
-    }
-    if (check == false) {
-      for (var j = 0; j < loweralphabet.length; j++) {
-      if (arr[i] == loweralphabet[j]) {
-      strcode = strcode + loweralphabet[(j+key) % 26]
-      check = true;
-      }
-    }
-    }
-    
-    if (check == false) {
-      strcode = strcode + arr[i]
-    }
-  }
-  console.log(strcode);
-  document.getElementById("encodeoutput").innerHTML = strcode;
-}
