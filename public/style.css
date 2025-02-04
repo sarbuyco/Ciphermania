@@ -254,18 +254,18 @@ a#decoderNav{
   display: inline-block;
   width: 100%;
   height: 100px;
-  background-image: url(https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/locks%20sprites.webp?v=1738700557385);
+  background-image: url(https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/lock%20sprites.jpg?v=1738700730252);
   background-repeat: no-repeat;
-  background-position: -50px -50px;
+  background-position: -310px -175px;
 }
 
 a#decoderNav:hover{
   display: inline-block;
   width: 100%;
   height: 100px;
-  background-image: url(https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/locks%20sprites.webp?v=1738700557385);
+  background-image: url(https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/lock%20sprites.jpg?v=1738700730252);
   background-repeat: no-repeat;
-  background-position: -100px -315px;
+  background-position: -29px -175px;
 }
 
 a#encoderNav{
@@ -274,7 +274,7 @@ a#encoderNav{
   height: 100px;
   background-image: url(https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/lock%20sprites.jpg?v=1738700730252);
   background-repeat: no-repeat;
-  background-position: -200px -200px;
+  background-position: -169px -180px;
 }
 
 a#encoderNav:hover{
@@ -283,7 +283,7 @@ a#encoderNav:hover{
   height: 100px;
   background-image: url(https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/lock%20sprites.jpg?v=1738700730252);
   background-repeat: no-repeat;
-  background-position: -328px -330px;
+  background-position: -28px -460px;
 }
 
 a#aboutUsNav{
