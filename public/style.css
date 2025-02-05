@@ -355,38 +355,38 @@ a#libraryNav:hover{
 
 a#alexTwitter{
   display: inline-block;
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   background-image: url(https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/socmed%20sprites.jpg?v=1738763600577);
   background-repeat: no-repeat;
-  background-position: -335px -240px;
+  background-position: -329px -238px;
 }
 
 a#alexTwitter:hover{
   display: inline-block;
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   background-image: url(https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/socmed%20sprites.jpg?v=1738763600577);
   background-repeat: no-repeat;
-  background-position: -335px -85px;
+  background-position: -329px -80px;
 }
 
 a#alexTumblr{
   display: inline-block;
-  width: 80px;
-  height: 80px;
-  background-image: url(https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/tumblr%20sprites.jpg?v=1738765322490);
+  width: 90px;
+  height: 90px;
+  background-image: url(https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/tumblr%20sprites.jpg?v=1738765635265);
   background-repeat: no-repeat;
-  background-position: -400px -300px;
+  background-position: -200px -230px;
 }
 
 a#alexTumblr:hover{
   display: inline-block;
-  width: 80px;
-  height: 80px;
-  background-image: url(https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/tumblr%20sprites.jpg?v=1738765322490);
+  width: 90px;
+  height: 90px;
+  background-image: url(https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/tumblr%20sprites.jpg?v=1738765635265);
   background-repeat: no-repeat;
-  background-position: -335px -85px;
+  background-position: -20px -230px;
 }
 
 div#socMedLinks{
