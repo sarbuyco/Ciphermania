@@ -446,7 +446,7 @@ function BaconEncode() {
           "L","M","N","O","P","Q","R","S","T","U","V",
           "W","X","Y","Z"
         ];
-        //converter
+        //converter, only lowercase a and b as the keys for this decoder/encoder
         var baconalpha = [
           "aaaaa","aaaab","aaaba","aaabb","aabaa","aabab","aabba","aabbb","abaaa","abaaa",
           "abaab","ababa","ababb","abbaa","abbab","abbba","abbbb","baaaa","baaab","baaba",
@@ -460,7 +460,7 @@ function BaconEncode() {
         for (var i = 0; i < arr.length; i++) {
           //reset the check variable back to false
           check = false;
-          //checks if the array character is an uppercase letter, and if it is, substitutes another letter by adding the shift key.
+          //lowercase and uppercase does not change in conversion to bacon cipher; this is for code case sensitivity
           for (var j = 0; j < upperalphabet.length; j = j + 1) {
             if (arr[i] == upperalphabet[j]) {
               //modulo by 26 so that if j + key is more than the alphabet array length, then it will go back to index zero.
@@ -478,7 +478,7 @@ function BaconEncode() {
               }
             }
           }
-          //if it is still not identified as either lowercase or uppercase letter, then it is deemed a special character or a space, and is added into the string as itself.
+          //if it is still not identified as either lowercase or uppercase letter, then it is deemed a special character or a space, and will therefore do nothing (bacon cipher does not have any spaces in decode).
           if (check == false);
         }
         //outputs the string
@@ -487,14 +487,14 @@ function BaconEncode() {
       }
 
 function BaconDecode() {
-        //Get the values of the input and the shift key
+        //Get the values of the input
         var text = document.getElementById("decodeinput").value + "";
         console.log(text);
-        //Shift key can go negative. This is to make sure it is equal to the normal positive shift key
         //splitting the characters into an array
         const arr = text.split(" ");
         console.log(arr);
         //defining the alphabet that the input array will be compared to
+        //bacon has either only lowercase or uppercase letters. In this case, lowercase.
         var loweralphabet = [
           "a","b","c","d","e","f","g","h","i","j","k",
           "l","m","n","o","p","q","r","s","t","u","v",
@@ -515,24 +515,22 @@ function BaconDecode() {
         for (var i = 0; i < arr.length; i++) {
           //reset the check variable back to false
           check = false;
-          //checks if the array character is an uppercase letter, and if it is, substitutes another letter by adding the shift key.
+          //case sensitivity does not matter for bacon cipher; in this case, it is converted fully lowercase.
           for (var j = 0; j < baconalpha.length; j = j + 1) {
             if (arr[i] == baconalpha[j]) {
-              //modulo by 26 so that if j + key is more than the alphabet array length, then it will go back to index zero.
+              //loweralphabet in replacement of arr
               strtext = strtext + loweralphabet[j];
-              //if it is equal to the uppercase letter, check will be true
+              //if there had been a change, check = true;
               check = true;
             }
           }
-          //if it is still not identified as either lowercase or uppercase letter, then it is deemed a special character or a space, and is added into the string as itself.
+          //if it is still not identified as either lowercase or uppercase letter, then it is deemed a special character or a space, and will therefore do nothing (bacon cipher does not have any spaces in decode).
           if (check == false);
         }
         //outputs the string
         console.log(strtext);
         document.getElementById("decodeoutput").innerHTML = strtext;
-      }
-
-SMSEncode();
+}
 
 function SMSEncode() {
         //Get the values of the input and the shift key
