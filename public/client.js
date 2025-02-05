@@ -1,16 +1,4 @@
-function cipherselect(inputnumber) {
-  var cipherinput = inputnumber;
-}
-
-function coder() {
-  
-  var cipher = cipherinput;
-  if (cipher == 1)
-    CaesarEncode();
-}
-
-//Beta only includes Encode Caesar Function for now
-      function CaesarEncode() {
+function CaesarEncode() {
         //Get the values of the input and the shift key
         var text = document.getElementById("encodeinput").value + "";
         var key = document.getElementById("encodekeyinput").value;
@@ -27,60 +15,14 @@ function coder() {
         console.log(arr);
         //defining the alphabet that the input array will be compared to
         var loweralphabet = [
-          "a",
-          "b",
-          "c",
-          "d",
-          "e",
-          "f",
-          "g",
-          "h",
-          "i",
-          "j",
-          "k",
-          "l",
-          "m",
-          "n",
-          "o",
-          "p",
-          "q",
-          "r",
-          "s",
-          "t",
-          "u",
-          "v",
-          "w",
-          "x",
-          "y",
-          "z",
+          "a","b","c","d","e","f","g","h","i","j","k",
+          "l","m","n","o","p","q","r","s","t","u","v",
+          "w","x","y","z"
         ];
         var upperalphabet = [
-          "A",
-          "B",
-          "C",
-          "D",
-          "E",
-          "F",
-          "G",
-          "H",
-          "I",
-          "J",
-          "K",
-          "L",
-          "M",
-          "N",
-          "O",
-          "P",
-          "Q",
-          "R",
-          "S",
-          "T",
-          "U",
-          "V",
-          "W",
-          "X",
-          "Y",
-          "Z",
+          "A","B","C","D","E","F","G","H","I","J","K",
+          "L","M","N","O","P","Q","R","S","T","U","V",
+          "W","X","Y","Z"
         ];
         
         //bool variable to check if the character is a letter or special character
@@ -119,8 +61,7 @@ function coder() {
         document.getElementById("encodeoutput").innerHTML = strtext;
       }
 
-//Beta only includes Encode Caesar Function for now
-      function CaesarDecode() {
+function CaesarDecode() {
         //Get the values of the input and the shift key
         var text = document.getElementById("decodeinput").value + "";
         var key = document.getElementById("decodekeyinput").value;
@@ -206,58 +147,14 @@ function MorseEncode() {
           "-","+","=","/",":"
         ];
         var morsealpha = [
-          ".-",
-          "-...",
-          "-.-.",
-          "-..",
-          ".",
-          "..-.",
-          "--.",
-          "....",
-          "..",
-          ".---",
-          "-.-",
-          ".-..",
-          "--", 
-          "-.",
-          "---", 
-          ".--.",
-          "--.-",
-          ".-.",
-          "...",
-          "-",
-          "..-",
-          "...-",
-          ".--",
-          "-..-",
-          "-.--",
-          "--..",
+          ".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",
+          ".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",
+          ".--","-..-","-.--","--..",
           ".----", //start of numbers
-          "..---",
-          "...--",
-          "....-",
-          ".....",
-          "-....",
-          "--...",
-          "---..",
-          "----.",
-          "-----",
+          "..---","...--","....-",".....","-....","--...","---..","----.","-----",
           "--..--", //start of special charas
-          ".-.-.-",
-          "-.-.--",
-          "..--..",
-          ".--.-.",
-          ".-...",
-          "-.--.",
-          "-.--.-",
-          ".----.",
-          ".-..-.",
-          "-....-",
-          ".-.-.",
-          "-...-",
-          "-..-.",
-          "---...",
-          "/" //space
+          ".-.-.-","-.-.--","..--..",".--.-.",".-...","-.--.","-.--.-",".----.",".-..-.","-....-",".-.-.",
+          "-...-","-..-.","---...","/" //space
         ];
         
         //bool variable to check if the character is a letter or special character
@@ -325,58 +222,14 @@ function MorseDecode() {
           "-","+","=","/",":"
         ];
         var morsealpha = [
-          ".-",
-          "-...",
-          "-.-.",
-          "-..",
-          ".",
-          "..-.",
-          "--.",
-          "....",
-          "..",
-          ".---",
-          "-.-",
-          ".-..",
-          "--", 
-          "-.",
-          "---", 
-          ".--.",
-          "--.-",
-          ".-.",
-          "...",
-          "-",
-          "..-",
-          "...-",
-          ".--",
-          "-..-",
-          "-.--",
-          "--..",
+          ".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",
+          ".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",
+          ".--","-..-","-.--","--..",
           ".----", //start of numbers
-          "..---",
-          "...--",
-          "....-",
-          ".....",
-          "-....",
-          "--...",
-          "---..",
-          "----.",
-          "-----",
+          "..---","...--","....-",".....","-....","--...","---..","----.","-----",
           "--..--", //start of special charas
-          ".-.-.-",
-          "-.-.--",
-          "..--..",
-          ".--.-.",
-          ".-...",
-          "-.--.",
-          "-.--.-",
-          ".----.",
-          ".-..-.",
-          "-....-",
-          ".-.-.",
-          "-...-",
-          "-..-.",
-          "---...",
-          "/" //space
+          ".-.-.-","-.-.--","..--..",".--.-.",".-...","-.--.","-.--.-",".----.",".-..-.","-....-",".-.-.",
+          "-...-","-..-.","---...","/" //space
         ];
         
         //bool variable to check if the character is a letter or special character
@@ -440,7 +293,7 @@ function AffineEncode() {
         ];
   
         if (slope % 2 == 0 || slope % 13 == 0 || slope % 26 == 0) {
-          alert(".")
+          alert("Slope (first input) must be coprime to the size of the alphabet. Please try again.")
         }
   
         else {
@@ -507,7 +360,7 @@ function AffineDecode() {
         ];
   
         if (slope % 2 == 0 || slope % 13 == 0 || slope % 26 == 0) {
-          alert("Please input a number coprime to the size of the alphabet for the first number (slope).")
+          alert("Slope (first input) must be coprime to the size of the alphabet. Please try again.")
         }
   
         else {
@@ -522,14 +375,13 @@ function AffineDecode() {
           var strtext = "";
         
           for (let i = 0; i < 26; i++) {
-          flag = (slope * i) % 26;
+            flag = (slope * i) % 26;
          
-          //Check if (a*i)%26 == 1,
-          //then i will be the multiplicative inverse of a
-          if (flag == 1)
-          { 
+            //Check if (a*i)%26 == 1,
+            //then i will be the multiplicative inverse of a
+            if (flag == 1) { 
               slopeinv = i;
-          }
+            }
           }
 
           for (var i = 0; i < arr.length; i++) {
@@ -586,35 +438,10 @@ function BaconEncode() {
         ];
         //converter
         var baconalpha = [
-          "aaaaa",
-          "aaaab",
-          "aaaba",
-          "aaabb",
-          "aabaa",
-          "aabab",
-          "aabba",
-          "aabbb",
-          "abaaa",
-          "abaaa",
-          "abaab",
-          "ababa",
-          "ababb",
-          "abbaa",
-          "abbab",
-          "abbba",
-          "abbbb",
-          "baaaa",
-          "baaab",
-          "baaba",
-          "baabb",
-          "baabb",
-          "babaa",
-          "babab",
-          "babba",
-          "babbb"
+          "aaaaa","aaaab","aaaba","aaabb","aabaa","aabab","aabba","aabbb","abaaa","abaaa",
+          "abaab","ababa","ababb","abbaa","abbab","abbba","abbbb","baaaa","baaab","baaba",
+          "baabb","baabb","babaa","babab","babba","babbb"
         ];
-        
-        
         //bool variable to check if the character is a letter or special character
         var check = false;
         //The variable to be outputted
