@@ -196,6 +196,10 @@ function MorseEncode() {
           //if a space, adds the slash convert.
           if (arr[i] == " ") {
             strtext = strtext + morsealpha[morsealpha.length - 1] + " ";
+            check = true;
+          }
+          if (check == false) {
+            alert(arr[i] + " has no morse code equivalent! Skipping that...");
           }
         }
         //outputs the string
