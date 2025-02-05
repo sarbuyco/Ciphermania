@@ -438,6 +438,8 @@ function AffineEncode() {
           "L","M","N","O","P","Q","R","S","T","U","V",
           "W","X","Y","Z"
         ];
+  
+        if (slope % )
         
         //bool variable to check if the character is a letter or special character
         var check = false;
