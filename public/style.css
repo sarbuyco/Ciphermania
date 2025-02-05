@@ -370,3 +370,9 @@ a#alexTwitter:hover{
   background-repeat: no-repeat;
   background-position: -335px -85px;
 }
+
+div#socMedLinks{
+  display: flex;
+  padding: 10px;
+  
+}
