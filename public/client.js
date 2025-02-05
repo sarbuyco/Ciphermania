@@ -123,7 +123,7 @@ function CaesarDecode() {
       }
 
 function MorseEncode() {
-        //Get the values of the input and the shift key
+        //Get the values of the input
         var text = document.getElementById("encodeinput").value + "";
         console.log(text);
         //splitting the characters into an array
@@ -204,7 +204,7 @@ function MorseEncode() {
       }
 
 function MorseDecode() {
-        //Get the values of the input and the shift key
+        //Get the values of the input
         var text = document.getElementById("decodeinput").value + "";
         console.log(text);
         //splitting the characters into an array
@@ -269,18 +269,19 @@ function MorseDecode() {
       }
 
 function AffineEncode() {
-        //Get the values of the input and the shift key
+        //Get the values of the input, slope and intercept keys
         var text = document.getElementById("encodeinput").value + "";
         var key = document.getElementById("encodekeyinput").value;
         console.log(text);
         const arr = text.split("");
         const passarr = key.split(" ");
-        ////input should be two numbers; a slope, and an intercept.
+        //input should be two numbers; a slope, and an intercept.
         var slope = Number(passarr[0]);
         var intercept = Number(passarr[1]);
         if (!intercept) {
           alert("Please add an intercept!")
         }
+        else {
         console.log(arr);
         console.log(slope + intercept);
         //defining the alphabet that the input array will be compared to
@@ -308,7 +309,7 @@ function AffineEncode() {
           for (var i = 0; i < arr.length; i++) {
             //reset the check variable back to false
             check = false;
-            //checks if the array character is an uppercase letter, and if it is, substitutes another letter by calculating change in slope.
+            //checks if the array character is an uppercase letter, and if it is, turns it into another letter through (ax + b) % 26 argument.
             for (var j = 0; j < upperalphabet.length; j = j + 1) {
               if (arr[i] == upperalphabet[j]) {
                 //modulo by 26 so that if slope * j + intercept is more than the alphabet array length, then it will go back to index zero.
@@ -336,18 +337,23 @@ function AffineEncode() {
           console.log(strtext);
           document.getElementById("encodeoutput").innerHTML = strtext;
       }
+      }
 }
 
 function AffineDecode() {
-        //Get the values of the input and the shift key
+        //Get the values of the input, slope and intercept key
         var text = document.getElementById("decodeinput").value + "";
         var key = document.getElementById("decodekeyinput").value;
         console.log(text);
         const arr = text.split("");
         const passarr = key.split(" ");
-        //turns the key into singular integers
+        //input should be two numbers; a slope, and an intercept.
         var slope = Number(passarr[0]);
         var intercept = Number(passarr[1]);
+        if (!intercept) {
+          alert("Please add an intercept!")
+        }
+        else {
         console.log(arr);
         console.log(slope + intercept);
         //defining the alphabet that the input array will be compared to
@@ -419,10 +425,11 @@ function AffineDecode() {
           console.log(strtext);
           document.getElementById("decodeoutput").innerHTML = strtext;
       }
+      }
 }
 
 function BaconEncode() {
-        //Get the values of the input and the shift key
+        //Get the values of the input
         var text = document.getElementById("encodeinput").value + "";
         console.log(text);
         //splitting the characters into an array
