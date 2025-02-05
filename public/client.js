@@ -301,7 +301,7 @@ function AffineEncode() {
         }
   
         else {
-          //bool variable to check if the character is a letter or special character
+          //bool variable to check continuously if it's uppercase, lowercase, or a special character.
           var check = false;
           //The variable to be outputted
           var strtext = "";
@@ -373,7 +373,7 @@ function AffineDecode() {
         }
   
         else {
-          //bool variable to check if the character is a letter or special character
+          //bool variable to check continuously if it's uppercase, lowercase, or a special character.
           var check = false;
           //inverse of slope
           var slopeinv = 0;
@@ -452,7 +452,7 @@ function BaconEncode() {
           "abaab","ababa","ababb","abbaa","abbab","abbba","abbbb","baaaa","baaab","baaba",
           "baabb","baabb","babaa","babab","babba","babbb"
         ];
-        //bool variable to check if the character is a letter or special character
+        //bool variable to check continuously if it's uppercase, lowercase, or a special character.
         var check = false;
         //The variable to be outputted
         var strtext = "";
@@ -507,7 +507,7 @@ function BaconDecode() {
         ];
         
         
-        //bool variable to check if the character is a letter or special character
+        //bool variable to check continuously if it's uppercase, lowercase, or a special character.
         var check = false;
         //The variable to be outputted
         var strtext = "";
@@ -533,10 +533,9 @@ function BaconDecode() {
 }
 
 function SMSEncode() {
-        //Get the values of the input and the shift key
+        //Get the values of the input
         var text = document.getElementById("encodeinput").value + "";
         console.log(text);
-        //Shift key can go negative. This is to make sure it is equal to the normal positive shift key
         //splitting the characters into an array
         const arr = text.split("");
         console.log(arr);
@@ -557,7 +556,7 @@ function SMSEncode() {
           "9","99","999","9999"
         ];
         
-        //bool variable to check if the character is a letter or special character
+        //bool variable to check continuously if it's uppercase, lowercase, or a special character.
         var check = false;
         //The variable to be outputted
         var strtext = "";
@@ -565,10 +564,10 @@ function SMSEncode() {
         for (var i = 0; i < arr.length; i++) {
           //reset the check variable back to false
           check = false;
-          //checks if the array character is an uppercase letter, and if it is, substitutes another letter by adding the shift key.
+          //lowercase and uppercase does not change in conversion to Phone SMS for it is outputted numbers; this is for code case sensitivity
           for (var j = 0; j < upperalphabet.length; j = j + 1) {
             if (arr[i] == upperalphabet[j]) {
-              //modulo by 26 so that if j + key is more than the alphabet array length, then it will go back to index zero.
+              //integers replace arr
               strtext = strtext + SMSalpha[j] + " ";
               //if it is equal to the uppercase letter, check will be true
               check = true;
@@ -583,7 +582,7 @@ function SMSEncode() {
               }
             }
           }
-          //if it is still not identified as either lowercase or uppercase letter, then it is deemed a special character or a space, and is added into the string as itself.
+          //if it is still not identified as either lowercase or uppercase letter, then it is deemed a special character (do nothing) or a space (add 0)
           if (check == false) {
             if (arr[i] == " ") {
               strtext = strtext + "0" + " ";
@@ -597,19 +596,13 @@ function SMSEncode() {
       }
 
 function SMSDecode() {
-        //Get the values of the input and the shift key
+        //Get the values of the input
         var text = document.getElementById("decodeinput").value + "";
         console.log(text);
-        //Shift key can go negative. This is to make sure it is equal to the normal positive shift key
         //splitting the characters into an array
         const arr = text.split(" ");
         console.log(arr);
         //defining the alphabet that the input array will be compared to
-        var loweralphabet = [
-          "a","b","c","d","e","f","g","h","i","j","k",
-          "l","m","n","o","p","q","r","s","t","u","v",
-          "w","x","y","z"
-        ];
         var upperalphabet = [
           "A","B","C","D","E","F","G","H","I","J","K",
           "L","M","N","O","P","Q","R","S","T","U","V",
@@ -621,7 +614,7 @@ function SMSDecode() {
           "9","99","999","9999"
         ];
         
-        //bool variable to check if the character is a letter or special character
+        //bool variable to check continuously if it's uppercase, lowercase, or a special character.
         var check = false;
         //The variable to be outputted
         var strtext = "";
@@ -629,25 +622,15 @@ function SMSDecode() {
         for (var i = 0; i < arr.length; i++) {
           //reset the check variable back to false
           check = false;
-          //checks if the array character is an uppercase letter, and if it is, substitutes another letter by adding the shift key.
+          //checks if the SMSalpha's index value correspond to the arr value. If yes, will be converted to uppercase.
           for (var j = 0; j < SMSalpha.length; j = j + 1) {
             if (arr[i] == SMSalpha[j]) {
-              //modulo by 26 so that if j + key is more than the alphabet array length, then it will go back to index zero.
               strtext = strtext + upperalphabet[j];
               //if it is equal to the uppercase letter, check will be true
               check = true;
             }
           }
-          //if character has not been identified as an uppercase letter, then it will start to browse through the lowercase letters, following the same tactic.
-          if (check == false) {
-            for (var j = 0; j < loweralphabet.length; j = j + 1) {
-              if (arr[i] == loweralphabet[j]) {
-                strtext = strtext + SMSalpha[j];
-                check = true;
-              }
-            }
-          }
-          //if it is still not identified as either lowercase or uppercase letter, then it is deemed a special character or a space, and is added into the string as itself.
+          //if 0, add space
           if (check == false) {
             if (arr[i] == "0") {
               strtext = strtext + " ";
