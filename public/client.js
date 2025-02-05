@@ -193,8 +193,8 @@ function MorseEncode() {
             }
           }
           
-          //if a space or 
-          if (check == false) {
+          //if a space, adds the slash convert.
+          if (arr[i] == " ") {
             strtext = strtext + morsealpha[morsealpha.length - 1] + " ";
           }
         }
@@ -207,7 +207,6 @@ function MorseDecode() {
         //Get the values of the input and the shift key
         var text = document.getElementById("decodeinput").value + "";
         console.log(text);
-        //Shift key can go negative. This is to make sure it is equal to the normal positive shift key
         //splitting the characters into an array
         const arr = text.split(" ");
         console.log(arr);
@@ -233,7 +232,7 @@ function MorseDecode() {
           "-...-","-..-.","---...","/" //space
         ];
         
-        //bool variable to check if the character is a letter or special character
+        //bool variable to check continuously if it's uppercase, lowercase, or a special character
         var check = false;
         //The variable to be outputted
         var strtext = "";
@@ -241,16 +240,16 @@ function MorseDecode() {
         for (var i = 0; i < arr.length; i++) {
           //reset the check variable back to false
           check = false;
-          //checks if the array character is an uppercase letter, and if it is, substitutes another letter by adding the shift key.
+          //checks which index value of morsealpha matches the array index
           for (var j = 0; j < morsealpha.length - 26; j = j + 1) {
             if (arr[i] == morsealpha[j]) {
-              //modulo by 26 so that if j + key is more than the alphabet array length, then it will go back to index zero.
+              //replaces the morse code with the actual alphabet
               strtext = strtext + upperalphabet[j];
               //if it is equal to the uppercase letter, check will be true
               check = true;
             }
           }
-          //if it is still not identified as either lowercase or uppercase letter, then it is deemed a special character or a space, and is added into the string as itself.
+          //if it is still not identified as either lowercase or uppercase letter, then it is checked if it's a special character or a space
           if (check == false) {
              for (var j = 26; j < morsealpha.length - 1; j = j + 1) {
               if (arr[i] == morsealpha[j]) {
@@ -259,8 +258,8 @@ function MorseDecode() {
               }
             }
           }
-          
-          if (check == false) {
+          //if arr index is a slash, it is equal to a space in original text
+          if (arr[i] == "/") {
             strtext = strtext + " ";
           }
         }
@@ -276,9 +275,12 @@ function AffineEncode() {
         console.log(text);
         const arr = text.split("");
         const passarr = key.split(" ");
-        //turns the key into singular integers
+        ////input should be two numbers; a slope, and an intercept.
         var slope = Number(passarr[0]);
         var intercept = Number(passarr[1]);
+        if (!intercept) {
+          alert("Please add an intercept!")
+        }
         console.log(arr);
         console.log(slope + intercept);
         //defining the alphabet that the input array will be compared to
