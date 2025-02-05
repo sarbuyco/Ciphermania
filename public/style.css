@@ -371,6 +371,24 @@ a#alexTwitter:hover{
   background-position: -335px -85px;
 }
 
+a#alexTumblr{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-image: url(https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/tumblr%20sprites.jpg?v=1738765322490);
+  background-repeat: no-repeat;
+  background-position: -400px -300px;
+}
+
+a#alexTumblr:hover{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-image: url(https://cdn.glitch.global/9ba5d5f1-5de6-4c7e-9b90-9216504f9784/tumblr%20sprites.jpg?v=1738765322490);
+  background-repeat: no-repeat;
+  background-position: -335px -85px;
+}
+
 div#socMedLinks{
   display: flex;
   padding: 10px;
