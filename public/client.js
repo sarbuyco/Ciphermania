@@ -68,7 +68,7 @@ function CaesarDecode() {
         //testing if it works
         console.log(text);
         console.log(key);
-        //Shift key can go negative. This is to make sure it is equal to the normal positive shift key
+        //26 - key is the new shift key, turning it back to the original text
           key = 26 - key;
         console.log(key);
         //splitting the characters into an array
@@ -126,7 +126,6 @@ function MorseEncode() {
         //Get the values of the input and the shift key
         var text = document.getElementById("encodeinput").value + "";
         console.log(text);
-        //Shift key can go negative. This is to make sure it is equal to the normal positive shift key
         //splitting the characters into an array
         const arr = text.split("");
         console.log(arr);
@@ -146,6 +145,7 @@ function MorseEncode() {
           ",",".","!","?","@","&","(",")","'",'"',
           "-","+","=","/",":"
         ];
+        //array that will convert it into morse
         var morsealpha = [
           ".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",
           ".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",
@@ -157,7 +157,7 @@ function MorseEncode() {
           "-...-","-..-.","---...","/" //space
         ];
         
-        //bool variable to check if the character is a letter or special character
+        //bool variable to check continuously if it's uppercase, lowercase, or a special character.
         var check = false;
         //The variable to be outputted
         var strtext = "";
@@ -165,10 +165,10 @@ function MorseEncode() {
         for (var i = 0; i < arr.length; i++) {
           //reset the check variable back to false
           check = false;
-          //checks if the array character is an uppercase letter, and if it is, substitutes another letter by adding the shift key.
+          //lowercase and uppercase does not change in conversion to morse code; this is for code case sensitivity
           for (var j = 0; j < upperalphabet.length; j = j + 1) {
             if (arr[i] == upperalphabet[j]) {
-              //modulo by 26 so that if j + key is more than the alphabet array length, then it will go back to index zero.
+              //adds the index of morsealpha in replacement of the letter in the arr
               strtext = strtext + morsealpha[j] + " ";
               //if it is equal to the uppercase letter, check will be true
               check = true;
@@ -183,7 +183,7 @@ function MorseEncode() {
               }
             }
           }
-          //if it is still not identified as either lowercase or uppercase letter, then it is deemed a special character or a space, and is added into the string as itself.
+          //if it is still not identified as either lowercase or uppercase letter, then it is courses through the special character array
           if (check == false) {
              for (var j = 0; j < specialchars.length; j = j + 1) {
               if (arr[i] == specialchars[j]) {
@@ -193,6 +193,7 @@ function MorseEncode() {
             }
           }
           
+          //if a space or 
           if (check == false) {
             strtext = strtext + morsealpha[morsealpha.length - 1] + " ";
           }
@@ -491,32 +492,9 @@ function BaconDecode() {
           "w","x","y","z"
         ];
         var baconalpha = [
-          "aaaaa",
-          "aaaab",
-          "aaaba",
-          "aaabb",
-          "aabaa",
-          "aabab",
-          "aabba",
-          "aabbb",
-          "abaaa",
-          "abaaa",
-          "abaab",
-          "ababa",
-          "ababb",
-          "abbaa",
-          "abbab",
-          "abbba",
-          "abbbb",
-          "baaaa",
-          "baaab",
-          "baaba",
-          "baabb",
-          "baabb",
-          "babaa",
-          "babab",
-          "babba",
-          "babbb"
+          "aaaaa","aaaab","aaaba","aaabb","aabaa","aabab","aabba","aabbb","abaaa","abaaa",
+          "abaab","ababa","ababb","abbaa","abbab","abbba","abbbb","baaaa","baaab","baaba",
+          "baabb","baabb","babaa","babab","babba","babbb"
         ];
         
         
@@ -567,32 +545,9 @@ function SMSEncode() {
           "W","X","Y","Z"
         ];
         var SMSalpha = [
-          "2",
-          "22",
-          "222",
-          "3",
-          "33",
-          "333",
-          "4",
-          "44",
-          "444",
-          "5",
-          "55",
-          "555",
-          "6",
-          "66",
-          "666",
-          "7",
-          "77",
-          "777",
-          "7777",
-          "8",
-          "88",
-          "888",
-          "9",
-          "99",
-          "999",
-          "9999"
+          "2","22","222","3","33","333","4","44","444","5","55",
+          "555","6","66","666","7","77","777","7777","8","88","888",
+          "9","99","999","9999"
         ];
         
         //bool variable to check if the character is a letter or special character
@@ -654,32 +609,9 @@ function SMSDecode() {
           "W","X","Y","Z"
         ];
         var SMSalpha = [
-          "2",
-          "22",
-          "222",
-          "3",
-          "33",
-          "333",
-          "4",
-          "44",
-          "444",
-          "5",
-          "55",
-          "555",
-          "6",
-          "66",
-          "666",
-          "7",
-          "77",
-          "777",
-          "7777",
-          "8",
-          "88",
-          "888",
-          "9",
-          "99",
-          "999",
-          "9999"
+          "2","22","222","3","33","333","4","44","444","5","55",
+          "555","6","66","666","7","77","777","7777","8","88","888",
+          "9","99","999","9999"
         ];
         
         //bool variable to check if the character is a letter or special character
